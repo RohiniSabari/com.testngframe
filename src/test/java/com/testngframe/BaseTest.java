@@ -22,7 +22,7 @@ public class BaseTest {
 
 	@BeforeMethod(alwaysRun = true)
 	public void setup() {
-
+System.out.println("Base Test updated");
 		driver = new ChromeDriver();
 		lp = new Loginpage(driver);
 	}
