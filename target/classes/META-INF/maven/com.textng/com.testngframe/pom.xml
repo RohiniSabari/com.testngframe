@@ -7,7 +7,8 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.23.1</version>
+    <version>4.24.0</version>
+   
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
@@ -16,12 +17,35 @@
     <version>5.9.2</version>
 </dependency>
    
-   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+ <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.6.1</version>
+    <version>6.8.8</version>
     <scope>test</scope>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.2</version>
+		</dependency>
+			<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.18.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.18.0</version>
+		</dependency>
+
+
+  	<dependency>
+  		<groupId>com.tekarch.demo</groupId>
+  		<artifactId>seleniumautomationframeworkjul24</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
   </dependencies>
 </project>

@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testngframe.Logintest">
+      <class name="tests.Logouttest">
         <methods>
-          <include name="setup"/>
-          <include name="LogintestTc01"/>
+          <include name="tearDownFinal"/>
           <include name="tearDown"/>
-          <include name="loginToSalesforceTC02"/>
+          <include name="verifydeveloper"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.testngframe.Logintest -->
+      </class> <!-- tests.Logouttest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
