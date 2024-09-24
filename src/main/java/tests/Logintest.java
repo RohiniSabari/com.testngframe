@@ -11,9 +11,8 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.training.base.Homepage;
-import com.training.base.Loginpage;
-
+import Pages.Homepage;
+import Pages.Loginpage;
 import Utils.Commonutils;
 import Utils.Fileutils;
 import listenersdemo1.ListenersSSF;

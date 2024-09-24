@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Logouttest">
+      <class name="tests.Tc33343536Randometest">
         <methods>
           <include name="tearDownFinal"/>
+          <include name="verifycustomtab"/>
           <include name="tearDown"/>
-          <include name="verifydeveloper"/>
           <include name="setup"/>
           <include name="setup"/>
           <include name="login"/>
         </methods>
-      </class> <!-- tests.Logouttest -->
+      </class> <!-- tests.Tc33343536Randometest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

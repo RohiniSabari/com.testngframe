@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-18T10:52:47 CDT" name="Default suite" finished-at="2024-09-18T10:52:59 CDT" duration-ms="11935">
+  <suite started-at="2024-09-23T19:27:40 CDT" name="Default suite" finished-at="2024-09-23T19:27:57 CDT" duration-ms="16788">
     <groups>
     </groups>
-    <test started-at="2024-09-18T10:52:47 CDT" name="Default test" finished-at="2024-09-18T10:52:59 CDT" duration-ms="11935">
-      <class name="tests.Developerconsoletest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Developerconsoletest@2fab4aff]" started-at="2024-09-18T10:52:47 CDT" name="setup" finished-at="2024-09-18T10:52:47 CDT" duration-ms="353" status="PASS">
+    <test started-at="2024-09-23T19:27:40 CDT" name="Default test" finished-at="2024-09-23T19:27:57 CDT" duration-ms="16788">
+      <class name="tests.Tc33343536Randometest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Tc33343536Randometest@6e46d9f4]" started-at="2024-09-23T19:27:40 CDT" name="setup" finished-at="2024-09-23T19:27:40 CDT" duration-ms="228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.Developerconsoletest@2fab4aff]" started-at="2024-09-18T10:52:47 CDT" name="setup" finished-at="2024-09-18T10:52:51 CDT" duration-ms="3678" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.Tc33343536Randometest@6e46d9f4]" started-at="2024-09-23T19:27:40 CDT" name="setup" finished-at="2024-09-23T19:27:43 CDT" duration-ms="2509" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,30 +20,30 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void tests.Developerconsoletest.verifydeveloper() throws java.io.FileNotFoundException,java.io.IOException,java.lang.InterruptedException]]>
+                <![CDATA[public void tests.Tc33343536Randometest.verifycustomtab() throws java.io.FileNotFoundException,java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:tests.Developerconsoletest@2fab4aff]" started-at="2024-09-18T10:52:51 CDT" name="login" finished-at="2024-09-18T10:52:55 CDT" duration-ms="4171" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:tests.Tc33343536Randometest@6e46d9f4]" started-at="2024-09-23T19:27:43 CDT" name="login" finished-at="2024-09-23T19:27:44 CDT" duration-ms="1700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifydeveloper()[pri:0, instance:tests.Developerconsoletest@2fab4aff]" started-at="2024-09-18T10:52:55 CDT" name="verifydeveloper" finished-at="2024-09-18T10:52:59 CDT" duration-ms="3860" status="PASS">
+        <test-method signature="verifycustomtab()[pri:0, instance:tests.Tc33343536Randometest@6e46d9f4]" started-at="2024-09-23T19:27:44 CDT" name="verifycustomtab" finished-at="2024-09-23T19:27:56 CDT" duration-ms="12186" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifydeveloper -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Developerconsoletest@2fab4aff]" started-at="2024-09-18T10:52:59 CDT" name="tearDown" finished-at="2024-09-18T10:52:59 CDT" duration-ms="132" status="PASS">
+        </test-method> <!-- verifycustomtab -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Tc33343536Randometest@6e46d9f4]" started-at="2024-09-23T19:27:56 CDT" name="tearDown" finished-at="2024-09-23T19:27:57 CDT" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownFinal()[pri:0, instance:tests.Developerconsoletest@2fab4aff]" started-at="2024-09-18T10:52:59 CDT" name="tearDownFinal" finished-at="2024-09-18T10:53:01 CDT" duration-ms="1689" status="PASS">
+        <test-method is-config="true" signature="tearDownFinal()[pri:0, instance:tests.Tc33343536Randometest@6e46d9f4]" started-at="2024-09-23T19:27:57 CDT" name="tearDownFinal" finished-at="2024-09-23T19:27:57 CDT" duration-ms="503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownFinal -->
-      </class> <!-- tests.Developerconsoletest -->
+      </class> <!-- tests.Tc33343536Randometest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

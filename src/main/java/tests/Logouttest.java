@@ -9,14 +9,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.training.base.Developerconsolepage;
-import com.training.base.Homepage;
-import com.training.base.Loginpage;
-import com.training.base.Logoutpage;
 
+import Pages.Homepage;
+import Pages.Loginpage;
+import Pages.Logoutpage;
 import Utils.Commonutils;
 import listenersdemo1.ListenersSSF;
-import pages.LoginPage;
+
 @Listeners(ListenersSSF.class)
 public class Logouttest extends Basetest{
 

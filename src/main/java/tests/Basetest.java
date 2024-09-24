@@ -20,9 +20,9 @@ import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.training.base.Homepage;
-import com.training.base.Loginpage;
 
+import Pages.Homepage;
+import Pages.Loginpage;
 import Utils.ReportManager;
 
 

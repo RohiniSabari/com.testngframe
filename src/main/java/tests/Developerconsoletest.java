@@ -4,18 +4,17 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.training.base.Developerconsolepage;
-import com.training.base.Homepage;
-import com.training.base.Loginpage;
-
+import Pages.Developerconsolepage;
+import Pages.Homepage;
+import Pages.Loginpage;
 import listenersdemo1.ListenersSSF;
-import pages.LoginPage;
+
 @Listeners(ListenersSSF.class)
 public class Developerconsoletest extends Basetest {
 
