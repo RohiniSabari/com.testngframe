@@ -1,7 +1,7 @@
 package tests;
 
 import java.lang.reflect.Method;
-import java.time.Duration;
+
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
@@ -32,17 +32,7 @@ WebDriver driver=null;
 	Loginpage lp=null;
 	Homepage hp=null;
 	
-	/*@BeforeMethod
-	public void setup1() {
-	 driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		lp = new Loginpage(driver);
-		hp=new Homepage(driver);
-}
-@AfterMethod
-public void teardown() {
-	driver.close();
-}*/
+	
 	
 	
 	public static ExtentReports extent;

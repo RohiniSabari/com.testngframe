@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>31/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 17 13:14:05 CDT 2024</td>
+<td>Started on:</td><td>Thu Sep 26 18:53:41 CDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23017 ms)</td>
+<tr><td>Total time:</td><td>308 seconds (308515 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,189 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.Logintest.loginToSalesforceTC03()'><b>loginToSalesforceTC03</b><br>Test class: tests.Logintest</td>
-<td><div><pre>java.lang.AssertionError: expected [https://tekarch-a9-dev-ed.develop.my.salesforce.com/setup/forcecomHomepage.apexp?setupid=ForceCom] but found [Home Page ~ Salesforce - Developer Edition]
-	at tests.Logintest.loginToSalesforceTC03(Logintest.java:78)
+<td title='tests.Logouttest.verifyLogout()'><b>verifyLogout</b><br>Test class: tests.Logouttest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Logout&apos;)]&quot;}
+  (Session info: chrome=129.0.6668.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0caf64dcd5db9d59c4b4d591ef7a06a0, findElement {using=xpath, value=//a[contains(text(),&apos;Logout&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\Rohini\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52211/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0caf64dcd5db9d59c4b4d591ef7a06a0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
+	at Pages.Logoutpage.selectLogout(Logoutpage.java:28)
+	at tests.Logouttest.verifyLogout(Logouttest.java:40)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1942269236", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1942269236'><pre>java.lang.AssertionError: expected [https://tekarch-a9-dev-ed.develop.my.salesforce.com/setup/forcecomHomepage.apexp?setupid=ForceCom] but found [Home Page ~ Salesforce - Developer Edition]
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1083398355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1083398355'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Logout&apos;)]&quot;}
+  (Session info: chrome=129.0.6668.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0caf64dcd5db9d59c4b4d591ef7a06a0, findElement {using=xpath, value=//a[contains(text(),&apos;Logout&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\Rohini\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52211/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0caf64dcd5db9d59c4b4d591ef7a06a0
+	at jdk.internal.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
+	at Pages.Logoutpage.selectLogout(Logoutpage.java:28)
+	at tests.Logouttest.verifyLogout(Logouttest.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>32</td>
+<td>tests.Logouttest@2fd1731c</td></tr>
+<tr>
+<td title='tests.Tc2526272829303132contactnewviewtest.verifycheckmycontact()'><b>verifycheckmycontact</b><br>Test class: tests.Tc2526272829303132contactnewviewtest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@title=&apos;Go!&apos;]&quot;}
+  (Session info: chrome=129.0.6668.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c66a9e37be2affda096a2d6844edbe7, findElement {using=xpath, value=//input[@title=&apos;Go!&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\Rohini\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54226}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54226/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c66a9e37be2affda096a2d6844edbe7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
+	at Pages.Tc2526272829303132Contactnewviewpage.verifymycontact(Tc2526272829303132Contactnewviewpage.java:111)
+	at tests.Tc2526272829303132contactnewviewtest.verifycheckmycontact(Tc2526272829303132contactnewviewtest.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace320116196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace320116196'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@title=&apos;Go!&apos;]&quot;}
+  (Session info: chrome=129.0.6668.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c66a9e37be2affda096a2d6844edbe7, findElement {using=xpath, value=//input[@title=&apos;Go!&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\Rohini\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54226}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54226/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c66a9e37be2affda096a2d6844edbe7
+	at jdk.internal.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
+	at Pages.Tc2526272829303132Contactnewviewpage.verifymycontact(Tc2526272829303132Contactnewviewpage.java:111)
+	at tests.Tc2526272829303132contactnewviewtest.verifycheckmycontact(Tc2526272829303132contactnewviewtest.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>26</td>
+<td>tests.Tc2526272829303132contactnewviewtest@302fec27</td></tr>
+<tr>
+<td title='tests.Logintest.loginToSalesforceTC03()'><b>loginToSalesforceTC03</b><br>Test class: tests.Logintest</td>
+<td><div><pre>java.lang.AssertionError: expected [https://tekarch-a9-dev-ed.develop.my.salesforce.com/setup/forcecomHomepage.apexp?setupid=ForceCom] but found [Home Page ~ Salesforce - Developer Edition]
+	at tests.Logintest.loginToSalesforceTC03(Logintest.java:77)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace112613476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace112613476'><pre>java.lang.AssertionError: expected [https://tekarch-a9-dev-ed.develop.my.salesforce.com/setup/forcecomHomepage.apexp?setupid=ForceCom] but found [Home Page ~ Salesforce - Developer Edition]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at tests.Logintest.loginToSalesforceTC03(Logintest.java:78)
+	at tests.Logintest.loginToSalesforceTC03(Logintest.java:77)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,24 +278,32 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>14</td>
-<td>tests.Logintest@55f3c410</td></tr>
+<td>9</td>
+<td>tests.Logintest@3bffddff</td></tr>
 <tr>
-<td title='tests.Logintest.loginToSalesforceTC02()'><b>loginToSalesforceTC02</b><br>Test class: tests.Logintest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [https://tekarch-a9-dev-ed.develop.my.salesforce.com/setup/forcecomHomepage.apexp?setupid=ForceCom] but found [Home Page ~ Salesforce - Developer Edition]
-	at tests.Logintest.loginToSalesforceTC02(Logintest.java:65)
+<td title='tests.Tc07Mysettingstest.verifyDisplayandlayout()'><b>verifyDisplayandlayout</b><br>Test class: tests.Tc07Mysettingstest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Reports
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at Pages.Mysettingspage.verifyDisplayandLayout(Mysettingspage.java:164)
+	at tests.Tc07Mysettingstest.verifyDisplayandlayout(Tc07Mysettingstest.java:55)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1156753990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1156753990'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [https://tekarch-a9-dev-ed.develop.my.salesforce.com/setup/forcecomHomepage.apexp?setupid=ForceCom] but found [Home Page ~ Salesforce - Developer Edition]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at tests.Logintest.loginToSalesforceTC02(Logintest.java:65)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2037471130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2037471130'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Reports
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at Pages.Mysettingspage.verifyDisplayandLayout(Mysettingspage.java:164)
+	at tests.Tc07Mysettingstest.verifyDisplayandlayout(Tc07Mysettingstest.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,8 +323,85 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>13</td>
-<td>tests.Logintest@55f3c410</td></tr>
+<td>9</td>
+<td>tests.Tc07Mysettingstest@6063d80a</td></tr>
+<tr>
+<td title='tests.Tc2021222324Leadtest.verifytodaydeal()'><b>verifytodaydeal</b><br>Test class: tests.Tc2021222324Leadtest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;fBody&apos;]//input[@name=&apos;go&apos;]&quot;}
+  (Session info: chrome=129.0.6668.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41af37ce11955eeec33d1c4aeea20b55, findElement {using=xpath, value=//span[@class=&apos;fBody&apos;]//input[@name=&apos;go&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\Rohini\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54103}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54103/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af37ce11955eeec33d1c4aeea20b55
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Pages.Tc2021222324Leads.verifytodayleads(Tc2021222324Leads.java:107)
+	at tests.Tc2021222324Leadtest.verifytodaydeal(Tc2021222324Leadtest.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace931005921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace931005921'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;fBody&apos;]//input[@name=&apos;go&apos;]&quot;}
+  (Session info: chrome=129.0.6668.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41af37ce11955eeec33d1c4aeea20b55, findElement {using=xpath, value=//span[@class=&apos;fBody&apos;]//input[@name=&apos;go&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\Rohini\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54103}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54103/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af37ce11955eeec33d1c4aeea20b55
+	at jdk.internal.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Pages.Tc2021222324Leads.verifytodayleads(Tc2021222324Leads.java:107)
+	at tests.Tc2021222324Leadtest.verifytodaydeal(Tc2021222324Leadtest.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>25</td>
+<td>tests.Tc2021222324Leadtest@60cf80e7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -161,15 +412,160 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.Logintest.loginErrorMessageTC01()'><b>loginErrorMessageTC01</b><br>Test class: tests.Logintest</td>
+<td title='tests.Tc2526272829303132contactnewviewtest.verifyuniquename()'><b>verifyuniquename</b><br>Test class: tests.Tc2526272829303132contactnewviewtest</td>
 <td></td>
-<td>9</td>
-<td>tests.Logintest@55f3c410</td></tr>
+<td>6</td>
+<td>tests.Tc2526272829303132contactnewviewtest@302fec27</td></tr>
+<tr>
+<td title='tests.Tc2526272829303132contactnewviewtest.verifyviewcontact()'><b>verifyviewcontact</b><br>Test class: tests.Tc2526272829303132contactnewviewtest</td>
+<td></td>
+<td>7</td>
+<td>tests.Tc2526272829303132contactnewviewtest@302fec27</td></tr>
+<tr>
+<td title='tests.Tc2021222324Leadtest.verifydefaultview()'><b>verifydefaultview</b><br>Test class: tests.Tc2021222324Leadtest</td>
+<td></td>
+<td>27</td>
+<td>tests.Tc2021222324Leadtest@60cf80e7</td></tr>
+<tr>
+<td title='tests.Tc07Mysettingstest.verifycalendark()'><b>verifycalendark</b><br>Test class: tests.Tc07Mysettingstest</td>
+<td></td>
+<td>7</td>
+<td>tests.Tc07Mysettingstest@6063d80a</td></tr>
+<tr>
+<td title='tests.createaccounttest.verifyaccountname()'><b>verifyaccountname</b><br>Test class: tests.createaccounttest</td>
+<td></td>
+<td>13</td>
+<td>tests.createaccounttest@5ae76500</td></tr>
+<tr>
+<td title='tests.Tc07Mysettingstest.verifymysettings()'><b>verifymysettings</b><br>Test class: tests.Tc07Mysettingstest</td>
+<td></td>
+<td>5</td>
+<td>tests.Tc07Mysettingstest@6063d80a</td></tr>
+<tr>
+<td title='tests.Tc15and16171819createopportnewtest.verifyopportunity()'><b>verifyopportunity</b><br>Test class: tests.Tc15and16171819createopportnewtest</td>
+<td></td>
+<td>34</td>
+<td>tests.Tc15and16171819createopportnewtest@24f360b2</td></tr>
+<tr>
+<td title='tests.Tc2526272829303132contactnewviewtest.verifyerror()'><b>verifyerror</b><br>Test class: tests.Tc2526272829303132contactnewviewtest</td>
+<td></td>
+<td>10</td>
+<td>tests.Tc2526272829303132contactnewviewtest@302fec27</td></tr>
+<tr>
+<td title='tests.Tc33343536Randometest.verifyfirstandlast()'><b>verifyfirstandlast</b><br>Test class: tests.Tc33343536Randometest</td>
+<td></td>
+<td>6</td>
+<td>tests.Tc33343536Randometest@770d0ea6</td></tr>
+<tr>
+<td title='tests.Tc2021222324Leadtest.verifynewbuttonlead()'><b>verifynewbuttonlead</b><br>Test class: tests.Tc2021222324Leadtest</td>
+<td></td>
+<td>12</td>
+<td>tests.Tc2021222324Leadtest@60cf80e7</td></tr>
 <tr>
 <td title='tests.Developerconsoletest.verifydeveloper()'><b>verifydeveloper</b><br>Test class: tests.Developerconsoletest</td>
 <td></td>
+<td>3</td>
+<td>tests.Developerconsoletest@5ae81e1</td></tr>
+<tr>
+<td title='tests.Tc2021222324Leadtest.verifyLeadselectview()'><b>verifyLeadselectview</b><br>Test class: tests.Tc2021222324Leadtest</td>
+<td></td>
+<td>11</td>
+<td>tests.Tc2021222324Leadtest@60cf80e7</td></tr>
+<tr>
+<td title='tests.Tc33343536Randometest.verifycustomtab()'><b>verifycustomtab</b><br>Test class: tests.Tc33343536Randometest</td>
+<td></td>
+<td>18</td>
+<td>tests.Tc33343536Randometest@770d0ea6</td></tr>
+<tr>
+<td title='tests.Tc15and16171819createopportnewtest.verifycreateopport()'><b>verifycreateopport</b><br>Test class: tests.Tc15and16171819createopportnewtest</td>
+<td></td>
+<td>7</td>
+<td>tests.Tc15and16171819createopportnewtest@24f360b2</td></tr>
+<tr>
+<td title='tests.Tc2526272829303132contactnewviewtest.verifycancel()'><b>verifycancel</b><br>Test class: tests.Tc2526272829303132contactnewviewtest</td>
+<td></td>
+<td>9</td>
+<td>tests.Tc2526272829303132contactnewviewtest@302fec27</td></tr>
+<tr>
+<td title='tests.Tc15and16171819createopportnewtest.verifyquarterly()'><b>verifyquarterly</b><br>Test class: tests.Tc15and16171819createopportnewtest</td>
+<td></td>
+<td>25</td>
+<td>tests.Tc15and16171819createopportnewtest@24f360b2</td></tr>
+<tr>
+<td title='tests.Tc2526272829303132contactnewviewtest.verifysaveandnew()'><b>verifysaveandnew</b><br>Test class: tests.Tc2526272829303132contactnewviewtest</td>
+<td></td>
+<td>9</td>
+<td>tests.Tc2526272829303132contactnewviewtest@302fec27</td></tr>
+<tr>
+<td title='tests.Tc07Mysettingstest.verifyemaillink()'><b>verifyemaillink</b><br>Test class: tests.Tc07Mysettingstest</td>
+<td></td>
+<td>6</td>
+<td>tests.Tc07Mysettingstest@6063d80a</td></tr>
+<tr>
+<td title='tests.Tc15and16171819createopportnewtest.verifypipeline()'><b>verifypipeline</b><br>Test class: tests.Tc15and16171819createopportnewtest</td>
+<td></td>
 <td>2</td>
-<td>tests.Developerconsoletest@6bab2585</td></tr>
+<td>tests.Tc15and16171819createopportnewtest@24f360b2</td></tr>
+<tr>
+<td title='tests.Tc2526272829303132contactnewviewtest.verifycreatecontact()'><b>verifycreatecontact</b><br>Test class: tests.Tc2526272829303132contactnewviewtest</td>
+<td></td>
+<td>7</td>
+<td>tests.Tc2526272829303132contactnewviewtest@302fec27</td></tr>
+<tr>
+<td title='tests.Tc12Editviewtest.verifyeditview()'><b>verifyeditview</b><br>Test class: tests.Tc12Editviewtest</td>
+<td></td>
+<td>16</td>
+<td>tests.Tc12Editviewtest@355e34c7</td></tr>
+<tr>
+<td title='tests.Tc15and16171819createopportnewtest.verifystuck()'><b>verifystuck</b><br>Test class: tests.Tc15and16171819createopportnewtest</td>
+<td></td>
+<td>5</td>
+<td>tests.Tc15and16171819createopportnewtest@24f360b2</td></tr>
+<tr>
+<td title='tests.Tc2021222324Leadtest.verifyLead()'><b>verifyLead</b><br>Test class: tests.Tc2021222324Leadtest</td>
+<td></td>
+<td>4</td>
+<td>tests.Tc2021222324Leadtest@60cf80e7</td></tr>
+<tr>
+<td title='tests.Tc14Createaccountreporttest.verifyaccountreport()'><b>verifyaccountreport</b><br>Test class: tests.Tc14Createaccountreporttest</td>
+<td></td>
+<td>9</td>
+<td>tests.Tc14Createaccountreporttest@2a2da905</td></tr>
+<tr>
+<td title='tests.Tc33343536Randometest.verifyeditlast()'><b>verifyeditlast</b><br>Test class: tests.Tc33343536Randometest</td>
+<td></td>
+<td>33</td>
+<td>tests.Tc33343536Randometest@770d0ea6</td></tr>
+<tr>
+<td title='tests.Logintest.loginErrorMessageTC01()'><b>loginErrorMessageTC01</b><br>Test class: tests.Logintest</td>
+<td></td>
+<td>8</td>
+<td>tests.Logintest@3bffddff</td></tr>
+<tr>
+<td title='tests.Tc2526272829303132contactnewviewtest.verifycreatenewcontact()'><b>verifycreatenewcontact</b><br>Test class: tests.Tc2526272829303132contactnewviewtest</td>
+<td></td>
+<td>16</td>
+<td>tests.Tc2526272829303132contactnewviewtest@302fec27</td></tr>
+<tr>
+<td title='tests.Hometest.verifyhomeprofile()'><b>verifyhomeprofile</b><br>Test class: tests.Hometest</td>
+<td></td>
+<td>31</td>
+<td>tests.Hometest@5990e6c5</td></tr>
+<tr>
+<td title='tests.Logintest.loginToSalesforceTC02()'><b>loginToSalesforceTC02</b><br>Test class: tests.Logintest</td>
+<td></td>
+<td>15</td>
+<td>tests.Logintest@3bffddff</td></tr>
+<tr>
+<td title='tests.Tc11CreateAccounttest.verifycreateaccount()'><b>verifycreateaccount</b><br>Test class: tests.Tc11CreateAccounttest</td>
+<td></td>
+<td>10</td>
+<td>tests.Tc11CreateAccounttest@1133ec6e</td></tr>
+<tr>
+<td title='tests.Tc13verifymergetest.verifymerge()'><b>verifymerge</b><br>Test class: tests.Tc13verifymergetest</td>
+<td></td>
+<td>12</td>
+<td>tests.Tc13verifymergetest@54709809</td></tr>
 </table><p>
 </body>
 </html>

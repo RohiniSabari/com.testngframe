@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import Utils.Waitutils;
+
 public class Tc12Editviewpage extends Basepage{
 	
 
@@ -38,11 +40,12 @@ public class Tc12Editviewpage extends Basepage{
 			if(this.View.isDisplayed()) {
 			this.View.click();
 		
-		  Select dropdown = new Select(driver.findElement(By.id("fcf")));
-		    dropdown.selectByIndex(1);
-			
-		    WebElement EditLink = driver.findElement(By.linkText("Edit"));
-			EditLink.click();
+		
+		
+				  Select dropdown = new Select(driver.findElement(By.id("fcf")));
+				    dropdown.selectByIndex(2);
+				    Waitutils.explicitlyWaitForClickableElement(driver, this.Editlink);
+			this.Editlink.click();
 			WebElement viewname=driver.findElement(By.id("fname"));
 			viewname.clear();
 			viewname.sendKeys("shalini");

@@ -40,22 +40,6 @@ public class Tc15and16171819Createopportnew extends Basepage{
 	 return isaccount;
 }
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	@FindBy(xpath="//input[contains(@title,'New')]")
 	public WebElement new1;
 	
@@ -92,7 +76,7 @@ public class Tc15and16171819Createopportnew extends Basepage{
 	driver.switchTo().defaultContent();
 	driver.switchTo().frame("resultsFrame");
 	Thread.sleep(3000);
-	driver.findElement(By.xpath("//tr[@class='dataRow even last first']/th/a")).click();
+	driver.findElement(By.xpath("//tr[@class='dataRow even first']/th/a")).click();
 	driver.switchTo().window(getWindow[0]);
 	Thread.sleep(3000);
 	driver.findElement(By.xpath("//input[@id='opp9']")).click();

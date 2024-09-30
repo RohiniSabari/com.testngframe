@@ -104,7 +104,7 @@ return isdropdown;
 	view.selectByIndex(3);
 	
 	
-	WebElement gobutton=driver.findElement(By.name("go"));
+	WebElement gobutton=driver.findElement(By.xpath("//span[@class='fBody']//input[@name='go']"));
 			gobutton.click();
 	
 	
@@ -127,9 +127,9 @@ if(this.lead.isDisplayed()) {
 	WebElement LeadStatus = driver.findElement(By.xpath("//select[@id='lea13']"));
 	LeadStatus.click();
 	WebElement LastName = driver.findElement(By.xpath("//input[@id='name_lastlea2']"));
-	LastName.sendKeys("Ram");
+	LastName.sendKeys("Ra");
 	WebElement Company = driver.findElement(By.xpath("//input[@id='lea3']"));
-	Company.sendKeys("Bank");
+	Company.sendKeys("Ban");
 
 	WebElement SaveButton = driver.findElement(By.xpath("//td[@id='bottomButtonRow']//input[@title='Save']"));
 	SaveButton.click();
@@ -144,7 +144,7 @@ if(this.lead.isDisplayed()) {
 
 
 }}
-return isverifynew=false;}}
+return isverifynew;}}
 
 	
 

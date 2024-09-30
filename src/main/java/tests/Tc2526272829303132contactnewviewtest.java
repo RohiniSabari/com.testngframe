@@ -29,100 +29,106 @@ public class Tc2526272829303132contactnewviewtest extends Basetest{
 		hp = lp.loginToApp(driver);
 	}
 
-//	@Test
+	@Test
 	public void verifyuniquename() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver = getBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         Tc2526272829303132Contactnewviewpage c =hp.clickcontact(driver);
+        test.get().info("Contact clicked");
 		Assert.assertTrue(c.verifyuniquename(driver),"view name displayed");
 		Thread.sleep(3000);
 		
-		
+		 logger.info("unique name verified");
 		
 		
 	}
 	
-	//@Test
+@Test
 	public void verifycreatenewcontact() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver = getBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         Tc2526272829303132Contactnewviewpage c =hp.clickcontact(driver);
+        test.get().info("Contact clicked");
 		Assert.assertTrue(c.verifycreatenewcontact(driver),"New contact should be created");
 		Thread.sleep(3000);
 		
-		
+		 logger.info("createnewcontact verified");
 		
 		
 	}	
-	//@Test
+	@Test
 	public void verifycreatecontact() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver = getBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         Tc2526272829303132Contactnewviewpage c =hp.clickcontact(driver);
 		Assert.assertTrue(c.verifyrecentcreatecontact(driver),"Recently created contacts should be displayed");
 		Thread.sleep(3000);
-		
+		 logger.info("createcontact  verified");
 		
 		
 		
 	}	
 	
-	//@Test
+@Test
 		public void verifycheckmycontact() throws FileNotFoundException, IOException, InterruptedException {
 			WebDriver driver = getBrowser();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	        Tc2526272829303132Contactnewviewpage c =hp.clickcontact(driver);
+	        test.get().info("Contact clicked");
 			Assert.assertTrue(c.verifymycontact(driver),"My contacts View should be displayed");
-			Thread.sleep(3000);
 			
+			 logger.info("checkmycontact verified");
 			
 			
 			
 		}	
-	//@Test
+	@Test
 	public void verifyviewcontact() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver = getBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         Tc2526272829303132Contactnewviewpage c =hp.clickcontact(driver);
+        test.get().info("Contact clicked");
 		Assert.assertTrue(c.verifyContactname(driver),"Contact Page related to <contact name>, which contains entire information about that <contact name> should be displayed");
 		Thread.sleep(3000);
 		
-		
+		 logger.info("veiw contact verified");
 		
 		
 	}	
-	//@Test
+	@Test
 	public void verifyerror() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver = getBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         Tc2526272829303132Contactnewviewpage c =hp.clickcontact(driver);
 		Assert.assertTrue(c.verifyerrormsg(driver),"Error message is appeared under the View Name field. The Error message appears as \"Error: You must enter a value\".");
 		Thread.sleep(3000);
-		
+		 logger.info("Error verified");
 		
 		
 		
 	}	
-	//@Test
+@Test
 	public void verifycancel() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver = getBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         Tc2526272829303132Contactnewviewpage c =hp.clickcontact(driver);
+        test.get().info("Contact clicked");
 		Assert.assertTrue(c.verifycancel(driver),"Contacts Home page is displayed and the View ABCD should not be created.");
 		Thread.sleep(3000);
 		
-		
+		 logger.info("Cancel verified");
 		
 		
 	}	
 	
-	@Test
+@Test
 	public void verifysaveandnew() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver = getBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         Tc2526272829303132Contactnewviewpage c =hp.clickcontact(driver);
+        test.get().info("Contact clicked");
 		Assert.assertTrue(c.verifysaveandnew(driver),"New contact is created. Contact Edit: New Contact Page is dispalyed");
-		
+		 logger.info("save and new verified");
 		
 		
 		

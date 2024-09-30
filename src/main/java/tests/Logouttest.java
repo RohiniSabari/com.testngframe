@@ -30,15 +30,22 @@ public class Logouttest extends Basetest{
 	
 	
 		@Test
-		public void verifydeveloper() throws FileNotFoundException, IOException, InterruptedException {
+		public void verifyLogout() throws FileNotFoundException, IOException, InterruptedException {
 			WebDriver driver = getBrowser();
+			logger.info("Browser instance launched");
 			hp.clickUserMenu(driver);
+			test.get().info("usermenu clicked");
 			Assert.assertTrue(hp.verifyusermenu(),"user menu option should be available");
 			Logoutpage lo=hp.selectLogout(driver);
-			lo.selectLogout();
+			lo.selectLogout(driver);
+			test.get().info("logout selected");
 	        Assert.assertTrue(lo.verifylogout(driver),"logout");
-			test.get().info("Logout button clicked");
+	    
+	        
+			//test.get().info("Logout button clicked");
 			Commonutils.captureScreenshot(driver);
+			logger.info("Logout verified");
+			
 			
 		}
 			

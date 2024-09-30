@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite parallel="methods" name="Failed suite [ParallelSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <parameter name="bName" value="chrome"/>
     <classes>
-      <class name="tests.Tc33343536Randometest">
+      <class name="tests.Logintest">
         <methods>
           <include name="tearDownFinal"/>
-          <include name="verifycustomtab"/>
+          <include name="loginToSalesforceTC03"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.Logintest -->
+      <class name="tests.Tc2526272829303132contactnewviewtest">
+        <methods>
+          <include name="tearDownFinal"/>
+          <include name="verifycheckmycontact"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.Tc2526272829303132contactnewviewtest -->
+      <class name="tests.Tc07Mysettingstest">
+        <methods>
+          <include name="tearDownFinal"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="verifyDisplayandlayout"/>
+        </methods>
+      </class> <!-- tests.Tc07Mysettingstest -->
+      <class name="tests.Logouttest">
+        <methods>
+          <include name="tearDownFinal"/>
+          <include name="verifyLogout"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="setup"/>
           <include name="login"/>
         </methods>
-      </class> <!-- tests.Tc33343536Randometest -->
+      </class> <!-- tests.Logouttest -->
+      <class name="tests.Tc2021222324Leadtest">
+        <methods>
+          <include name="tearDownFinal"/>
+          <include name="verifytodaydeal"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.Tc2021222324Leadtest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [ParallelSuite] -->

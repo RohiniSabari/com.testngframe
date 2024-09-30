@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Tc33343536Randometest">
+      <class name="tests.Tc12Editviewtest">
         <methods>
           <include name="tearDownFinal"/>
-          <include name="verifycustomtab"/>
+          <include name="login"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="setup"/>
-          <include name="login"/>
+          <include name="verifyeditview"/>
         </methods>
-      </class> <!-- tests.Tc33343536Randometest -->
+      </class> <!-- tests.Tc12Editviewtest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

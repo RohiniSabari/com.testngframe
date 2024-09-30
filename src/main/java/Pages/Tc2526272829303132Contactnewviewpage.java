@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import Utils.Waitutils;
+
 public class Tc2526272829303132Contactnewviewpage extends Basepage{
 
 	public Tc2526272829303132Contactnewviewpage(WebDriver driver) {
@@ -66,11 +68,11 @@ public class Tc2526272829303132Contactnewviewpage extends Basepage{
 	
 	newbutton.click();
 		
-	firstname.sendKeys("Rohinifewq");
+	firstname.sendKeys("Rohini");
 	
-	lastname.sendKeys("Rsdfaf");
+	lastname.sendKeys("R");
 	
-	accountname.sendKeys("werawesdfasdf");
+	accountname.sendKeys("Ramya");
 	Thread.sleep(3000);
 	WebElement save = driver.findElement(By.name("save"));
 	save.click();
@@ -79,7 +81,7 @@ public class Tc2526272829303132Contactnewviewpage extends Basepage{
 	
 	
 }
-	return isverify=false;}
+	return isverify;}
 	
 
 public boolean verifyrecentcreatecontact(WebDriver driver) throws InterruptedException {
@@ -93,16 +95,19 @@ public boolean verifyrecentcreatecontact(WebDriver driver) throws InterruptedExc
 return isverify1;
 }
 
+
+
 @FindBy(xpath="//input[@title='Go!']")
 public WebElement Gobutton;
 public boolean verifymycontact(WebDriver driver) {
 	
 boolean isverify2=true;
 
-Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='fcf']")));
-dropdown.selectByVisibleText("My Contacts");
+//Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='fcf']")));
+//dropdown.selectByVisibleText("My Contacts");
 if(this.Gobutton.isDisplayed()) {
-
+	Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='fcf']")));
+	dropdown.selectByVisibleText("My Contacts");
 this.Gobutton.click();}
 return isverify2; }
 
@@ -113,7 +118,8 @@ public boolean verifyContactname(WebDriver driver) {
 
 if(this.Contactname.isDisplayed()) {
 this.Contactname.click();}
-return isverifycontact;}
+return isverifycontact;
+}
 
 
 public boolean verifyerrormsg(WebDriver driver) {

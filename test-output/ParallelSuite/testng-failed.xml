@@ -8,12 +8,51 @@
         <methods>
           <include name="tearDownFinal"/>
           <include name="loginToSalesforceTC03"/>
-          <include name="loginToSalesforceTC02"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="setup"/>
         </methods>
       </class> <!-- tests.Logintest -->
+      <class name="tests.Tc2526272829303132contactnewviewtest">
+        <methods>
+          <include name="tearDownFinal"/>
+          <include name="verifycheckmycontact"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.Tc2526272829303132contactnewviewtest -->
+      <class name="tests.Tc07Mysettingstest">
+        <methods>
+          <include name="tearDownFinal"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="verifyDisplayandlayout"/>
+        </methods>
+      </class> <!-- tests.Tc07Mysettingstest -->
+      <class name="tests.Logouttest">
+        <methods>
+          <include name="tearDownFinal"/>
+          <include name="verifyLogout"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- tests.Logouttest -->
+      <class name="tests.Tc2021222324Leadtest">
+        <methods>
+          <include name="tearDownFinal"/>
+          <include name="verifytodaydeal"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.Tc2021222324Leadtest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [ParallelSuite] -->

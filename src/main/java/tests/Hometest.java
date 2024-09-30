@@ -33,11 +33,13 @@ public class Hometest extends Basetest{
 	@Test
 	public void verifyhomeprofile() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver=getBrowser();
-	
+		
 		hp.clickUserMenu(driver);
+		test.get().info("user menu clicked");
 		Assert.assertTrue(hp.verifyusermenu(),"user menu option should be available");
 		  Myprofilepage profilePage = hp.selectMyProfilePage(driver);
 		    profilePage.clickEditProfile(driver);
+		    test.get().info("Edit profile clicked");
 		    Assert.assertTrue(profilePage.verifyContactIframeAvailability(driver), "frame is available");
 		  Assert.assertTrue(profilePage.verifyAboutTab(driver), "about tab ");
 		   Assert.assertTrue(profilePage.verifyLastNameChange(),"");
@@ -45,8 +47,9 @@ public class Hometest extends Basetest{
 		   Assert.assertTrue(profilePage.verifypost(driver,"Hel"));
 		   Assert.assertTrue(profilePage.verifyFileUpload(driver));
 		    profilePage.clickOnAddPhoto(driver);
+		    test.get().info("Add photo clicked");
 		    Assert.assertTrue(profilePage.verifyAddPhoto(driver));
-		 
+		    logger.info("Profile page verified");
 		    
 		    
 		  

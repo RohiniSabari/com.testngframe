@@ -27,14 +27,15 @@ public class Tc11CreateAccounttest extends Basetest{
 		}
 
 		@Test
-		public void verifyuniquename() throws FileNotFoundException, IOException, InterruptedException {
+		public void verifycreateaccount() throws FileNotFoundException, IOException, InterruptedException {
 			WebDriver driver = getBrowser();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	       Tc11createnewview c =hp.clickaccount1(driver);
+	     test.get().info("account created");
 			Assert.assertTrue(c.verifyaccountname1(driver),"view name displayed");
 			Thread.sleep(3000);
 			
-			
+			 logger.info("unique name verified");
 			
 			
 		}

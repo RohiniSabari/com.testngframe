@@ -59,7 +59,7 @@ public class Logintest extends Basetest{
 					lp.enterPassword(Fileutils.readLoginPropertiesFile("valid.password"));
 					lp.clickLogin();
 					Commonutils.captureScreenshot(driver);
-					sa.assertEquals(driver.getTitle(), Fileutils.readLoginPropertiesFile("homepage.title"));
+					sa.assertEquals(driver.getTitle(), Fileutils.readLoginPropertiesFile("homepage.title1"));
 					System.out.println("Reached last line");
 					sa.assertAll();
 					

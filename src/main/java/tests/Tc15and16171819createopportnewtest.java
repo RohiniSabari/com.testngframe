@@ -32,8 +32,10 @@ public class Tc15and16171819createopportnewtest extends Basetest{
 		WebDriver driver = getBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
       Tc15and16171819Createopportnew c =hp.clickcreate(driver);
+      test.get().info("createopportunity clicked");
 		Assert.assertTrue(c.verifycreateoppotmenu(driver),"Drop down with \"All Oppotunities\", \"Closing Next Month\", \"Closing This Month\", \"My Opportunities\", \"New This Week\", \"Recently Viewed Opportunities\",\"Won\"  should be available");
 		Thread.sleep(3000);
+		 logger.info("Create opportunity menu verified");
 	}
 	@Test
 	
@@ -41,9 +43,10 @@ public class Tc15and16171819createopportnewtest extends Basetest{
 		WebDriver driver = getBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
       Tc15and16171819Createopportnew c =hp.clickcreate(driver);
+      test.get().info("createopportunity clicked and verified");
 		    Assert.assertTrue(c.verifynewopportunity(driver),"New Opportunity page is displayed with Opportunity details.");
-		    
-		driver.quit();
+		    logger.info("New opportunity verified");  
+		
 		
 		
 	}
@@ -53,16 +56,18 @@ public class Tc15and16171819createopportnewtest extends Basetest{
 		WebDriver driver = getBrowser();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
       Tc15and16171819Createopportnew c =hp.clickcreate(driver);	
+      test.get().info("createopportunity clicked");
       Assert.assertTrue(c.verifypipeline(driver),"Report Page with the Opportunities that are pipelined will be displayed.");
-}
+      logger.info("Pipeline verified");}
 @Test
 
 public void verifystuck() throws FileNotFoundException, IOException, InterruptedException {
 	WebDriver driver = getBrowser();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
   Tc15and16171819Createopportnew c =hp.clickcreate(driver);	
+  test.get().info("createopportunity clicked");
   Assert.assertTrue(c.verifystuckopport(driver),"Report Page with the Opportunities that are Stuck will be displayed.");
-}
+  logger.info("Stuck verified");}
 
 @Test
 
@@ -70,8 +75,9 @@ public void verifyquarterly() throws FileNotFoundException, IOException, Interru
 	WebDriver driver = getBrowser();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
   Tc15and16171819Createopportnew c =hp.clickcreate(driver);	
+  test.get().info("createopportunity clicked");
   Assert.assertTrue(c.verifyquarterlyt(driver),"Report Page with the Opportunities that satisfies the search criteria will be displayed.");
-}
+  logger.info("Quarterly verified");}
 
 
 }

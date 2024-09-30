@@ -30,14 +30,15 @@ public class Tc12Editviewtest extends Basetest{
 			}
 
 			@Test
-			public void verifyuniquename() throws FileNotFoundException, IOException, InterruptedException {
+			public void verifyeditview() throws FileNotFoundException, IOException, InterruptedException {
 				WebDriver driver = getBrowser();
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		       Tc12Editviewpage c =hp.clickaccount3(driver);
+		       test.get().info("account clicked");
 				Assert.assertTrue(c.verifyaccountname3(driver),"Accounts page is displayed with correct <username>and <View name> edit page Is displayed");
 				Thread.sleep(3000);
 				
-				
+				 logger.info("Account name verified");
 				
 				
 			}

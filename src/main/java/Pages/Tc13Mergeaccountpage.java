@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,6 +23,8 @@ public class Tc13Mergeaccountpage extends Basepage{
 	public WebElement FindAcc1;
 	@FindBy(xpath="//input[@id='cid0']")
 	public WebElement Button122;
+	@FindBy(xpath="//input[@id='cid1']")
+	public WebElement Button123;
 	@FindBy(xpath="//div[contains(@class,'pbTopButtons')]//input[contains(@title,'Next')]")
 	public WebElement Next;
 	@FindBy(xpath="//div[@class='pbTopButtons']//input[@title='Merge']")
@@ -43,12 +46,19 @@ public class Tc13Mergeaccountpage extends Basepage{
 			
 		    
 		  this.Button122.click();
+		  this.Button123.click();
 		  
 		    if(this.Next.isDisplayed()) {
 		  
 		  this.Next.click();    
-		    if(this.Merge.isDisplayed()) {
-		    this.Merge.click();	    
+		   if(this.Merge.isDisplayed()) {
+		    this.Merge.click();	  
+		   
+	
+			Alert ac1=driver.switchTo().alert();
+			System.out.println(ac1.getText());
+			ac1.accept();
+			
 		
 }}}
 			return isaccount;

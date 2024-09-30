@@ -1,0 +1,174 @@
+2024-09-26-18:53:47 INFO  Browser instance launched
+2024-09-26-18:53:50 DEBUG Navigated to the login page
+2024-09-26-18:53:50 DEBUG Navigated to the login page
+2024-09-26-18:53:50 DEBUG Username is entered
+2024-09-26-18:53:51 DEBUG Username is entered
+2024-09-26-18:53:51 DEBUG Password is entered
+2024-09-26-18:53:51 DEBUG Logging button clicked
+2024-09-26-18:53:52 DEBUG Username is entered
+2024-09-26-18:53:52 DEBUG Logging button clicked
+2024-09-26-18:53:54 DEBUG Username is entered
+2024-09-26-18:53:54 DEBUG Username is entered
+2024-09-26-18:53:55 DEBUG error message is fetched
+2024-09-26-18:53:55 INFO  loginErrorMessageTc01:Finished
+2024-09-26-18:53:57 DEBUG Password is entered
+2024-09-26-18:53:57 DEBUG Logging button clicked
+2024-09-26-18:53:57 DEBUG Password is entered
+2024-09-26-18:53:57 DEBUG Logging button clicked
+2024-09-26-18:53:57 DEBUG Password is entered
+2024-09-26-18:53:57 DEBUG Logging button clicked
+2024-09-26-18:54:04 INFO  Developerpage verified
+2024-09-26-18:54:10 DEBUG Navigated to the login page
+2024-09-26-18:54:10 DEBUG Username is entered
+2024-09-26-18:54:11 DEBUG Password is entered
+2024-09-26-18:54:11 DEBUG Logging button clicked
+2024-09-26-18:54:21 DEBUG Navigated to the login page
+2024-09-26-18:54:22 DEBUG Username is entered
+2024-09-26-18:54:22 DEBUG Password is entered
+2024-09-26-18:54:22 DEBUG Logging button clicked
+2024-09-26-18:54:22 DEBUG Navigated to the login page
+2024-09-26-18:54:22 DEBUG Username is entered
+2024-09-26-18:54:23 DEBUG Password is entered
+2024-09-26-18:54:23 DEBUG Logging button clicked
+2024-09-26-18:54:25 INFO  Browser instance launched
+2024-09-26-18:54:32 INFO  Profile page verified
+2024-09-26-18:54:34 DEBUG Navigated to the login page
+2024-09-26-18:54:34 DEBUG Username is entered
+2024-09-26-18:54:34 DEBUG Password is entered
+2024-09-26-18:54:34 DEBUG Logging button clicked
+2024-09-26-18:54:35 INFO  Account verified
+2024-09-26-18:54:37 INFO  Browser instance launched
+2024-09-26-18:54:43 DEBUG Navigated to the login page
+2024-09-26-18:54:44 DEBUG Username is entered
+2024-09-26-18:54:44 DEBUG Password is entered
+2024-09-26-18:54:44 DEBUG Logging button clicked
+2024-09-26-18:54:46 INFO  popupwindow verified
+2024-09-26-18:54:48 DEBUG Navigated to the login page
+2024-09-26-18:54:48 DEBUG Username is entered
+2024-09-26-18:54:48 DEBUG Password is entered
+2024-09-26-18:54:48 DEBUG Logging button clicked
+2024-09-26-18:54:55 INFO  emailsettings verified
+2024-09-26-18:54:56 DEBUG Navigated to the login page
+2024-09-26-18:54:56 DEBUG Username is entered
+2024-09-26-18:54:57 DEBUG Password is entered
+2024-09-26-18:54:57 DEBUG Logging button clicked
+2024-09-26-18:55:01 INFO  My settings verified
+2024-09-26-18:55:08 INFO  unique name verified
+2024-09-26-18:55:09 DEBUG Navigated to the login page
+2024-09-26-18:55:09 DEBUG Navigated to the login page
+2024-09-26-18:55:09 DEBUG Username is entered
+2024-09-26-18:55:09 DEBUG Password is entered
+2024-09-26-18:55:09 DEBUG Logging button clicked
+2024-09-26-18:55:10 DEBUG Username is entered
+2024-09-26-18:55:11 DEBUG Password is entered
+2024-09-26-18:55:11 DEBUG Logging button clicked
+2024-09-26-18:55:17 DEBUG Navigated to the login page
+2024-09-26-18:55:18 DEBUG Username is entered
+2024-09-26-18:55:19 DEBUG Password is entered
+2024-09-26-18:55:19 DEBUG Logging button clicked
+2024-09-26-18:55:24 DEBUG Navigated to the login page
+2024-09-26-18:55:24 INFO  Merge verified
+2024-09-26-18:55:25 DEBUG Username is entered
+2024-09-26-18:55:25 DEBUG Password is entered
+2024-09-26-18:55:25 DEBUG Logging button clicked
+2024-09-26-18:55:32 INFO  Create opportunity menu verified
+2024-09-26-18:55:34 INFO  Account name verified
+2024-09-26-18:55:37 DEBUG Navigated to the login page
+2024-09-26-18:55:37 DEBUG Username is entered
+2024-09-26-18:55:38 DEBUG Password is entered
+2024-09-26-18:55:38 DEBUG Logging button clicked
+2024-09-26-18:55:38 INFO  Account report verified
+2024-09-26-18:55:44 DEBUG Navigated to the login page
+2024-09-26-18:55:45 DEBUG Username is entered
+2024-09-26-18:55:46 DEBUG Password is entered
+2024-09-26-18:55:46 DEBUG Logging button clicked
+2024-09-26-18:55:52 INFO  Pipeline verified
+2024-09-26-18:55:54 DEBUG Navigated to the login page
+2024-09-26-18:55:55 DEBUG Username is entered
+2024-09-26-18:55:55 DEBUG Password is entered
+2024-09-26-18:55:55 DEBUG Logging button clicked
+2024-09-26-18:56:11 DEBUG Navigated to the login page
+2024-09-26-18:56:11 DEBUG Navigated to the login page
+2024-09-26-18:56:16 DEBUG Username is entered
+2024-09-26-18:56:16 DEBUG Username is entered
+2024-09-26-18:56:16 DEBUG Navigated to the login page
+2024-09-26-18:56:16 DEBUG Username is entered
+2024-09-26-18:56:16 DEBUG Password is entered
+2024-09-26-18:56:16 DEBUG Logging button clicked
+2024-09-26-18:56:16 DEBUG Password is entered
+2024-09-26-18:56:16 DEBUG Logging button clicked
+2024-09-26-18:56:17 DEBUG Password is entered
+2024-09-26-18:56:17 DEBUG Logging button clicked
+2024-09-26-18:56:18 INFO  New opportunity verified
+2024-09-26-18:56:23 INFO  Quarterly verified
+2024-09-26-18:56:26 INFO  Lead verified
+2024-09-26-18:56:27 INFO  Stuck verified
+2024-09-26-18:56:29 INFO  Leadselectview verified
+2024-09-26-18:56:32 DEBUG Navigated to the login page
+2024-09-26-18:56:33 DEBUG Navigated to the login page
+2024-09-26-18:56:33 DEBUG Username is entered
+2024-09-26-18:56:33 DEBUG Password is entered
+2024-09-26-18:56:33 DEBUG Logging button clicked
+2024-09-26-18:56:33 DEBUG Username is entered
+2024-09-26-18:56:34 DEBUG Password is entered
+2024-09-26-18:56:34 DEBUG Logging button clicked
+2024-09-26-18:56:42 DEBUG Navigated to the login page
+2024-09-26-18:56:43 DEBUG Username is entered
+2024-09-26-18:56:44 DEBUG Password is entered
+2024-09-26-18:56:44 DEBUG Logging button clicked
+2024-09-26-18:56:46 DEBUG Navigated to the login page
+2024-09-26-18:56:47 DEBUG Username is entered
+2024-09-26-18:56:49 DEBUG Password is entered
+2024-09-26-18:56:49 DEBUG Logging button clicked
+2024-09-26-18:56:54 INFO  New button lead verified
+2024-09-26-18:56:58 INFO  Cancel verified
+2024-09-26-18:57:03 DEBUG Navigated to the login page
+2024-09-26-18:57:04 INFO  Default view verified
+2024-09-26-18:57:05 DEBUG Username is entered
+2024-09-26-18:57:06 DEBUG Navigated to the login page
+2024-09-26-18:57:10 DEBUG Navigated to the login page
+2024-09-26-18:57:10 DEBUG Username is entered
+2024-09-26-18:57:10 DEBUG Password is entered
+2024-09-26-18:57:10 DEBUG Logging button clicked
+2024-09-26-18:57:11 DEBUG Username is entered
+2024-09-26-18:57:11 DEBUG Password is entered
+2024-09-26-18:57:11 DEBUG Logging button clicked
+2024-09-26-18:57:11 DEBUG Password is entered
+2024-09-26-18:57:11 DEBUG Logging button clicked
+2024-09-26-18:57:26 INFO  createcontact  verified
+2024-09-26-18:57:31 DEBUG Navigated to the login page
+2024-09-26-18:57:32 DEBUG Username is entered
+2024-09-26-18:57:32 DEBUG Navigated to the login page
+2024-09-26-18:57:32 DEBUG Password is entered
+2024-09-26-18:57:32 DEBUG Logging button clicked
+2024-09-26-18:57:33 INFO  createnewcontact verified
+2024-09-26-18:57:34 DEBUG Username is entered
+2024-09-26-18:57:37 DEBUG Password is entered
+2024-09-26-18:57:37 DEBUG Logging button clicked
+2024-09-26-18:57:41 DEBUG Navigated to the login page
+2024-09-26-18:57:41 DEBUG Username is entered
+2024-09-26-18:57:42 DEBUG Password is entered
+2024-09-26-18:57:42 DEBUG Logging button clicked
+2024-09-26-18:57:48 INFO  save and new verified
+2024-09-26-18:57:52 INFO  Error verified
+2024-09-26-18:57:55 DEBUG Navigated to the login page
+2024-09-26-18:57:55 DEBUG Username is entered
+2024-09-26-18:57:56 DEBUG Password is entered
+2024-09-26-18:57:56 DEBUG Logging button clicked
+2024-09-26-18:57:56 INFO  unique name verified
+2024-09-26-18:57:57 DEBUG Navigated to the login page
+2024-09-26-18:58:10 DEBUG Username is entered
+2024-09-26-18:58:10 DEBUG Password is entered
+2024-09-26-18:58:10 DEBUG Logging button clicked
+2024-09-26-18:58:11 DEBUG Navigated to the login page
+2024-09-26-18:58:11 DEBUG Username is entered
+2024-09-26-18:58:11 DEBUG Password is entered
+2024-09-26-18:58:11 DEBUG Logging button clicked
+2024-09-26-18:58:17 INFO  veiw contact verified
+2024-09-26-18:58:19 DEBUG Navigated to the login page
+2024-09-26-18:58:19 DEBUG Username is entered
+2024-09-26-18:58:19 DEBUG Password is entered
+2024-09-26-18:58:19 DEBUG Logging button clicked
+2024-09-26-18:58:30 INFO  first and last name verified
+2024-09-26-18:58:37 INFO  Custom tab verified
+2024-09-26-18:58:49 INFO  edit last name verified

@@ -30,9 +30,12 @@ public class createaccounttest extends Basetest{
 	@Test
 	public void verifyaccountname() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver = getBrowser();
+		logger.info("Browser instance launched");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         Tc10CreateAccountpage tc=hp.clickaccount(driver);
+        test.get().info("account clicked");
 		Assert.assertTrue(tc.verifyaccountname(driver),"account name displayed and new account displayed and saved");
+		logger.info("Account verified");
 		Thread.sleep(3000);
 		
 		

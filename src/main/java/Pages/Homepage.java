@@ -97,9 +97,9 @@ import Utils.Waitutils;
 		@FindBy(xpath="//a[@title='Home Tab']")
 		public WebElement home;
 
-		public  Tc33343536RandomScenariospage clickhome(WebDriver driver) {
+		public  Tc3334353637RandomScenariospage clickhome(WebDriver driver) {
 			this.home.click();
-			return new Tc33343536RandomScenariospage(driver);
+			return new Tc3334353637RandomScenariospage(driver);
 		}
 		
 		

@@ -159,6 +159,7 @@ public class Mysettingspage extends Basepage{
 					
 					Select s=new Select(driver.findElement(By.id("p4")));
 					s.selectByVisibleText("Salesforce Chatter");
+					final String str="Reports";
 					Select s1=new Select(driver.findElement(By.id("duel_select_0")));
 					s1.selectByVisibleText("Reports");
 					

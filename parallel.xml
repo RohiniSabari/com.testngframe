@@ -5,7 +5,19 @@
 	  <parameter name="bName" value="chrome" ></parameter>
     <classes>
 		<class name="tests.Logintest"/>
+		<class name="tests.Hometest"/>
      <class name="tests.Developerconsoletest"/>
+     <class name="tests.Logouttest"/>
+     <class name="tests.createaccounttest"/>
+     <class name="tests.Tc07Mysettingstest"/>
+     <class name="tests.Tc11CreateAccounttest"/>
+     <class name="tests.Tc12Editviewtest"/>
+     <class name="tests.Tc13verifymergetest"/>
+     <class name="tests.Tc14Createaccountreporttest"/>
+     <class name="tests.Tc15and16171819createopportnewtest"/>
+     <class name="tests.Tc2021222324Leadtest"/>
+     <class name="tests.Tc2526272829303132contactnewviewtest"/>
+     <class name="tests.Tc33343536Randometest"/>
      </classes>
   </test> <!-- Test -->
 </suite> <!-- ParallelSuite -->

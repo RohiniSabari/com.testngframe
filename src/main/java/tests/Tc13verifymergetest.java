@@ -12,8 +12,9 @@ import org.testng.annotations.Test;
 
 import Pages.Homepage;
 import Pages.Loginpage;
-import Pages.Tc12Editviewpage;
+
 import Pages.Tc13Mergeaccountpage;
+import Utils.Commonutils;
 import listenersdemo1.ListenersSSF;
 
 
@@ -32,14 +33,15 @@ import listenersdemo1.ListenersSSF;
 				}
 
 				@Test
-				public void verifyuniquename() throws FileNotFoundException, IOException, InterruptedException {
+				public void verifymerge() throws FileNotFoundException, IOException, InterruptedException {
 					WebDriver driver = getBrowser();
 					driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			      Tc13Mergeaccountpage c =hp.clickaccount4(driver);
+			      test.get().info("merge account clicked");
 					Assert.assertTrue(c.verifymerge(driver),"Merge by Accounts step 2 page is displayed with the selected accounts details to merge");
 					Thread.sleep(3000);
-					
-					
+					Commonutils.captureScreenshot(driver);
+					 logger.info("Merge verified");
 					
 					
 				}

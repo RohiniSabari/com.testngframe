@@ -36,5 +36,5 @@ public class Developerconsoletest extends Basetest {
 			Developerconsolepage console= hp.selectDeveloperconsole(driver);
 			
 			Assert.assertTrue(console.verifydeveloper(driver), "Developer Console window is displayed");
-test.get().info("Deveoperpage verified");}
+logger.info("Developerpage verified");}
 }

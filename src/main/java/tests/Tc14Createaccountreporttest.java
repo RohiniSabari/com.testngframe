@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import Pages.Homepage;
 import Pages.Loginpage;
-import Pages.Tc13Mergeaccountpage;
+
 import Pages.Tc14Createaccountreportpage;
 import listenersdemo1.ListenersSSF;
 @Listeners(ListenersSSF.class)
@@ -33,14 +33,15 @@ public class Tc14Createaccountreporttest extends Basetest{
 				}
 
 				@Test
-				public void verifyuniquename() throws FileNotFoundException, IOException, InterruptedException {
+				public void verifyaccountreport() throws FileNotFoundException, IOException, InterruptedException {
 					WebDriver driver = getBrowser();
 					driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			      Tc14Createaccountreportpage c =hp.clickaccount5(driver);
+			      test.get().info("accountreport clicked");
 					Assert.assertTrue(c.verifyaccountreport(driver),"Report page with details and <report name>is displayed.");
 					Thread.sleep(3000);
 					
-					
+					 logger.info("Account report verified");
 					
 					
 				}
