@@ -50,9 +50,10 @@ public class Waitutils {
 	}
 
 	public static void fluentlyWait(WebDriver driver, WebElement elementToWait) {
-		Wait<WebDriver> fWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
+		Wait<WebDriver> fWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(30))
 				.pollingEvery(Duration.ofMillis(2000));
 		WebElement ele = fWait.until(new Function<WebDriver, WebElement>() {
+			@Override
 			public WebElement apply(WebDriver driver) {
 				return elementToWait;
 			}

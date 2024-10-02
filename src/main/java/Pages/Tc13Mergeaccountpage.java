@@ -1,7 +1,6 @@
 package Pages;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,16 +8,16 @@ import org.openqa.selenium.support.FindBy;
 public class Tc13Mergeaccountpage extends Basepage{
 	public  Tc13Mergeaccountpage(WebDriver driver) {
 		super(driver);
-		
+
 	}
 	@FindBy(id="Account_Tab")
 	public WebElement account4;
-	
+
 	@FindBy(xpath="//a[contains(text(),'Merge Accounts')]")
 	public WebElement Mergeaccount;
 	@FindBy(id="srch")
 	public WebElement fb1;
-	
+
 	@FindBy(name="srchbutton")
 	public WebElement FindAcc1;
 	@FindBy(xpath="//input[@id='cid0']")
@@ -41,25 +40,25 @@ public class Tc13Mergeaccountpage extends Basepage{
 			if(this.fb1.isDisplayed()) {
 			this.fb1.clear();
 		fb1.sendKeys("abc1");
-			
+
 			this.FindAcc1.click();
-			
-		    
+
+
 		  this.Button122.click();
 		  this.Button123.click();
-		  
+
 		    if(this.Next.isDisplayed()) {
-		  
-		  this.Next.click();    
+
+		  this.Next.click();
 		   if(this.Merge.isDisplayed()) {
-		    this.Merge.click();	  
-		   
-	
+		    this.Merge.click();
+
+
 			Alert ac1=driver.switchTo().alert();
 			System.out.println(ac1.getText());
 			ac1.accept();
-			
-		
+
+
 }}}
 			return isaccount;
 	}}

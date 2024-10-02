@@ -19,8 +19,8 @@ import listenersdemo1.ListenersSSF;
 @Listeners(ListenersSSF.class)
 
 public class Hometest extends Basetest{
-	
-	
+
+
 	Homepage hp;
 	WebDriver driver;
 	@BeforeMethod
@@ -29,11 +29,11 @@ public class Hometest extends Basetest{
 		Loginpage lp = new Loginpage(driver);
 		hp = lp.loginToApp(driver);
 	}
-	
+
 	@Test
 	public void verifyhomeprofile() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver=getBrowser();
-		
+
 		hp.clickUserMenu(driver);
 		test.get().info("user menu clicked");
 		Assert.assertTrue(hp.verifyusermenu(),"user menu option should be available");
@@ -50,10 +50,10 @@ public class Hometest extends Basetest{
 		    test.get().info("Add photo clicked");
 		    Assert.assertTrue(profilePage.verifyAddPhoto(driver));
 		    logger.info("Profile page verified");
-		    
-		    
-		  
+
+
+
 	}
-	
+
 
 }

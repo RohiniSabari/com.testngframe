@@ -13,7 +13,6 @@ import org.testng.annotations.Test;
 import Pages.Homepage;
 import Pages.Loginpage;
 import Pages.Tc11createnewview;
-
 import listenersdemo1.ListenersSSF;
 @Listeners(ListenersSSF.class)
 public class Tc11CreateAccounttest extends Basetest{
@@ -34,12 +33,12 @@ public class Tc11CreateAccounttest extends Basetest{
 	     test.get().info("account created");
 			Assert.assertTrue(c.verifyaccountname1(driver),"view name displayed");
 			Thread.sleep(3000);
-			
+
 			 logger.info("unique name verified");
-			
-			
+
+
 		}
-			
+
 	}
 
 

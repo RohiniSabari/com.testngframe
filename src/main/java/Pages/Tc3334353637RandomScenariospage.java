@@ -13,36 +13,36 @@ public class Tc3334353637RandomScenariospage extends Basepage{
 
 	public Tc3334353637RandomScenariospage(WebDriver driver) {
 		super(driver);
-		
+
 	}
 	@FindBy(xpath="//a[@title='Home Tab']")
 	public WebElement home;
 	@FindBy(className="currentStatusUserName")
 	public WebElement namelink;
-	
+
 	public  Tc3334353637RandomScenariospage clickhome(WebDriver driver) {
 		this.home.click();
 		return new Tc3334353637RandomScenariospage(driver);
 	}
 	public boolean verifyfirstandlastname(WebDriver driver) {
 		boolean isverifyfirstandlast = true;
-		
+
 	if(this.namelink.isDisplayed()) {
 	this.namelink.click();
-	
-	
-	
+
+
+
 }else {
 	isverifyfirstandlast = false;
 }
 	return isverifyfirstandlast ;}
-	
+
 	public boolean verifyeditlastname(WebDriver driver) throws InterruptedException {
 		boolean isverifyeditlast= true;
-		
+
 	if(this.namelink.isDisplayed()) {
 	this.namelink.click();
-	
+
 	 String homepage = driver.getWindowHandle();
 	 System.out.println("homepage is displayed");
 	 WebElement Edit = driver.findElement(By.xpath("//a[@class='contactInfoLaunch editLink']//img[@title='Edit Profile']"));
@@ -64,8 +64,8 @@ public class Tc3334353637RandomScenariospage extends Basepage{
 
 	}return isverifyeditlast;
 	}
-	
-	
+
+
 	@FindBy(name="customize")
 	public WebElement customize;
 	public boolean verifytab(WebDriver driver) throws InterruptedException {
@@ -73,7 +73,7 @@ public class Tc3334353637RandomScenariospage extends Basepage{
 		WebElement home=driver.findElement(By.className("allTabsArrow"));
 		 home.click();
 	if(this.customize.isDisplayed()) {
-	
+
 	 this.customize.click();
 	 WebElement Chatter = driver.findElement(By.xpath("//option[@value='Chatter']"));
 	Chatter.click();
@@ -96,15 +96,15 @@ public class Tc3334353637RandomScenariospage extends Basepage{
 	login1.click();
 	}
 return isverifytab;}
-	
+
 @FindBy(xpath="//li[@id='home_Tab']//a[contains(text(),'Home')]")
 public WebElement Home;
 public boolean verifycalendarweeklyoccurance(WebDriver driver) {
 	boolean isverifycalendar=true;
 	if(this.Home.isDisplayed()) {
-	
+
 	this.Home.click();
-	
+
 	WebElement datelink = driver.findElement(By.xpath("//span[@class='pageDescription']/a[1]"));
 	datelink.click();
 	WebElement time =driver.findElement(By.linkText("4:00 PM"));
@@ -118,7 +118,7 @@ public boolean verifycalendarweeklyoccurance(WebDriver driver) {
 	driver.findElement(By.xpath("//a[@href='javascript:pickValue(4);']")).click();
 	// driver.switchTo().defaultContent();
 	driver.switchTo().window(currentHandle);
-	
+
 	WebElement endtime=driver.findElement(By.xpath("//input[@id='EndDateTime_time']"));
 	endtime.click();
 	WebElement recurr=driver.findElement(By.id("IsRecurrence"));
@@ -129,7 +129,7 @@ public boolean verifycalendarweeklyoccurance(WebDriver driver) {
 	recendtime.sendKeys("09/27/2024");
 	WebElement save=driver.findElement(By.xpath("//td[@id='topButtonRow']//input[@title='Save']"));
 	save.click();
-	
+
 	}
 	return isverifycalendar;
 	}

@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.PageFactory;
 
 import Utils.Fileutils;
 
@@ -38,41 +37,41 @@ public Loginpage(WebDriver driver) {
 
 	@FindBy(id = "hint_back_chooser")
 	public WebElement savedUserName;
-	
+
 	@FindBy(how = How.ID, using = "error")
 	public WebElement errorMessage;
-	
-	
-	
-		
-	
+
+
+
+
+
 
 	public void enterUsername(String username) {
 		this.username.sendKeys(username);
 		logger.debug("Username is entered");
 	}
-	
+
 	public void enterPassword(String passWord) {
 		this.password.sendKeys(passWord);
 		logger.debug("Password is entered");
 	}
-	
+
 	public String getErrorMessage() {
 		logger.debug("error message is fetched");
 		return this.errorMessage.getText();
-		
+
 	}
-	
+
 	public void clickLogin() {
 		logger.debug("Logging button clicked");
 		this.loginButton.click();
 	}
-	
+
 	public String getValueAttribute(WebElement element) {
 		return element.getAttribute("value");
 	}
 	public Homepage loginToApp(WebDriver driver,String username,String password){
-		
+
 		this.enterUsername(username);
 		this.enterPassword(password);
 		this.clickLogin();
@@ -88,7 +87,7 @@ public Loginpage(WebDriver driver) {
 		return new Homepage(driver);
 	}
 
-	
+
 
 
 }

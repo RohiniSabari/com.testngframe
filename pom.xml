@@ -3,6 +3,10 @@
   <groupId>com.textng</groupId>
   <artifactId>com.testngframe</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+
+  <properties>
+  <cucumberversion>7.19.0</cucumberversion></properties>
   <dependencies><!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -47,5 +51,39 @@
   		<artifactId>seleniumautomationframeworkjul24</artifactId>
   		<version>1.0.0</version>
   	</dependency>
+  	
+  	
+ <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumberversion}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumberversion}</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.11.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>${cucumberversion}</version>
+		</dependency>
+
+
+
+
+
+	
   </dependencies>
 </project>

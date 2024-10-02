@@ -12,7 +12,6 @@ import org.testng.annotations.Test;
 
 import Pages.Homepage;
 import Pages.Loginpage;
-
 import Pages.Tc13Mergeaccountpage;
 import Utils.Commonutils;
 import listenersdemo1.ListenersSSF;
@@ -21,8 +20,8 @@ import listenersdemo1.ListenersSSF;
 	@Listeners(ListenersSSF.class)
 
 	public class Tc13verifymergetest  extends Basetest{
-		
-		
+
+
 			Homepage hp;
 				WebDriver driver;
 				@BeforeMethod
@@ -42,10 +41,10 @@ import listenersdemo1.ListenersSSF;
 					Thread.sleep(3000);
 					Commonutils.captureScreenshot(driver);
 					 logger.info("Merge verified");
-					
-					
+
+
 				}
-					
+
 			}
 
 

@@ -15,11 +15,11 @@ import Constants.FileConstants;
 
 public class Commonutils {
 	public static String getTimeStamp() {
-		
+
 		return new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 	}
-	
-	
+
+
 	public static String captureScreenshot(WebDriver driver) {
 		String filePath = FileConstants.SCREENSHOTS_FOLDER_PATH;
 		TakesScreenshot ts = (TakesScreenshot) driver;
@@ -29,7 +29,7 @@ public class Commonutils {
 		return filePath;
 	}
 
-	
+
 @DataProvider(name = "ValidAccounts")
 	public Object loginTestDataValid() {
 //		To read those user accounts logic

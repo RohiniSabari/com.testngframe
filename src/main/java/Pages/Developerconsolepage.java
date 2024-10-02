@@ -5,7 +5,6 @@ import java.util.Set;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class Developerconsolepage extends Basepage {
 	public  Developerconsolepage(WebDriver driver) {
@@ -13,17 +12,17 @@ public class Developerconsolepage extends Basepage {
 		// System.out.println("WebDriver initialized: " + (driver != null));
 	      //  PageFactory.initElements(driver, this);
 	}
-	
-	 
 
-	  
-	
+
+
+
+
 	@FindBy(xpath="//a[@title='Developer Console (New Window)']")
 	public WebElement developer;
-	
+
 	public boolean verifydeveloper(WebDriver driver) {
 	boolean isdeveloper = true;
-	
+
 	if(developer.isDisplayed()) {
 		developer.click();
 		logger.debug("Developer consoler clicked");
@@ -33,7 +32,7 @@ public class Developerconsolepage extends Basepage {
 	driver.switchTo().defaultContent();
 		driver.quit();
 	}
-	
+
 	return isdeveloper;
 	}
 }

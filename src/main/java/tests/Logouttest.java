@@ -9,7 +9,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
 import Pages.Homepage;
 import Pages.Loginpage;
 import Pages.Logoutpage;
@@ -27,8 +26,8 @@ public class Logouttest extends Basetest{
 		Loginpage lp = new Loginpage(driver);
 		hp = lp.loginToApp(driver);
 	}
-	
-	
+
+
 		@Test
 		public void verifyLogout() throws FileNotFoundException, IOException, InterruptedException {
 			WebDriver driver = getBrowser();
@@ -40,13 +39,13 @@ public class Logouttest extends Basetest{
 			lo.selectLogout(driver);
 			test.get().info("logout selected");
 	        Assert.assertTrue(lo.verifylogout(driver),"logout");
-	    
-	        
+
+
 			//test.get().info("Logout button clicked");
 			Commonutils.captureScreenshot(driver);
 			logger.info("Logout verified");
-			
-			
+
+
 		}
-			
+
 }

@@ -12,17 +12,16 @@ import org.testng.annotations.Test;
 
 import Pages.Homepage;
 import Pages.Loginpage;
-
 import Pages.Tc14Createaccountreportpage;
 import listenersdemo1.ListenersSSF;
 @Listeners(ListenersSSF.class)
 
 public class Tc14Createaccountreporttest extends Basetest{
-	
 
-	
-		
-		
+
+
+
+
 			Homepage hp;
 				WebDriver driver;
 				@BeforeMethod
@@ -40,12 +39,12 @@ public class Tc14Createaccountreporttest extends Basetest{
 			      test.get().info("accountreport clicked");
 					Assert.assertTrue(c.verifyaccountreport(driver),"Report page with details and <report name>is displayed.");
 					Thread.sleep(3000);
-					
+
 					 logger.info("Account report verified");
-					
-					
+
+
 				}
-					
+
 			}
 
 

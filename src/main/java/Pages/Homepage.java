@@ -2,14 +2,11 @@ package Pages;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.FindBy;
 
 import Utils.Fileutils;
@@ -21,8 +18,8 @@ import Utils.Waitutils;
 
 
 	public class Homepage extends Basepage{
-	
-	
+
+
 
 
 
@@ -30,34 +27,35 @@ import Utils.Waitutils;
 		public Homepage(WebDriver driver) {
 			super(driver);
 		}
-		
+
 		@FindBy(xpath = "//h2[text()='Community']")
 		public WebElement communityPanel;
-		
-	
+
+
 		@FindBy(xpath="//div[@id='userNavButton']")
 		public WebElement userMenu;
-		
+
 		@FindBy(xpath="//*[@id='userNav-menuItems']/a")
 		public List<WebElement>userMenuOptions;
 
 		@FindBy(xpath = "//*[@id='userNav-menuItems']/a[1]")
 		public WebElement myprofile;
-		
+
 		@FindBy(xpath="//*[@id=\"userNav-menuItems\"]/a[2]")
 		public WebElement mySettings;
-		
-		
+
+
 		@FindBy(xpath="//a[@title='Contacts Tab']")
 		public WebElement Contact;
 		public boolean isHomePage() {
+			 
 		return this.communityPanel.isDisplayed();
 		}
 		public void clickUserMenu(WebDriver driver) {
 			Waitutils.explicitlyWaitForClickableElement(driver, this.userMenu);
-		
+
 			this.userMenu.click();
-			
+
 		}
 		@FindBy(id="Account_Tab")
 		public WebElement Account;
@@ -79,17 +77,17 @@ import Utils.Waitutils;
 		}
 		@FindBy(id="Account_Tab")
 		public WebElement account4;
-		
+
 		public  Tc13Mergeaccountpage clickaccount4(WebDriver driver) {
 			this.account4.click();
 			return new Tc13Mergeaccountpage(driver);
 		}
-		
+
 		@FindBy(id="Lead_Tab")
 		public WebElement lead;
-		
-		
-		
+
+
+
 		public  Tc2021222324Leads clicklead(WebDriver driver) {
 			this.lead.click();
 			return new Tc2021222324Leads(driver);
@@ -101,8 +99,8 @@ import Utils.Waitutils;
 			this.home.click();
 			return new Tc3334353637RandomScenariospage(driver);
 		}
-		
-		
+
+
 		public Tc2526272829303132Contactnewviewpage clickcontact(WebDriver driver) {
 			this.Contact.click();
 			return new Tc2526272829303132Contactnewviewpage(driver);
@@ -117,14 +115,14 @@ import Utils.Waitutils;
 			this.opport.click();
 			return new Tc15and16171819Createopportnew(driver);
 		}
-		
+
 		@FindBy(id="Account_Tab")
 		public WebElement accounttab;
 		public  Tc14Createaccountreportpage clickaccount5(WebDriver driver) {
 			this.accounttab.click();
 			return new Tc14Createaccountreportpage(driver);
 		}
-		
+
 		public Mysettingspage selectMysettings(WebDriver driver) {
 			this.mySettings.click();
 			return new Mysettingspage(driver);
@@ -136,39 +134,39 @@ import Utils.Waitutils;
 			return new Developerconsolepage(driver);
 		}
 		@FindBy(xpath="//a[contains(text(),'Logout')]")
-		
+
 		public WebElement logout1;
 		public Logoutpage selectLogout(WebDriver driver) {
 			//Waitutils.explicitlyWaitForClickableElement(driver, this.logout);
 			this.logout1.click();
 			return new Logoutpage(driver);
 		}
-		
-		
-	
+
+
+
 		public void selectdropdown(WebDriver driver,String option) {
 			String cssselector="[title='"+option+"']";
 			driver.findElement(By.cssSelector(cssselector)).click();
 		}
-		
-	
+
+
 		public boolean verifyusermenu() throws FileNotFoundException, IOException {
 			boolean isverifiedmenuoptions=true;
-		
+
 			String[] expectedusermenu=Fileutils.readHomePropertiesFile("usermenu.options").split(",");
 			for (int i=0;i<expectedusermenu.length;i++) {
 				if(expectedusermenu[i].equals(userMenuOptions.get(i).getText())){
-					
+
 					System.out.println("Expected"+expectedusermenu[i]+"Actual"+userMenuOptions.get(i).getText());
 				}
 				else {
 				 isverifiedmenuoptions=false;
 				}
-				
+
 			}
 			return isverifiedmenuoptions;
 		}
 	}
-	
+
 
 

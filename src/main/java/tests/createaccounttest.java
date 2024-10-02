@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
 import Pages.Homepage;
 import Pages.Loginpage;
 import Pages.Tc10CreateAccountpage;
@@ -37,12 +36,12 @@ public class createaccounttest extends Basetest{
 		Assert.assertTrue(tc.verifyaccountname(driver),"account name displayed and new account displayed and saved");
 		logger.info("Account verified");
 		Thread.sleep(3000);
-		
-		
-		
-		
+
+
+
+
 	}
-		
+
 }
 
 

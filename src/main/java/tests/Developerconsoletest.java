@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -26,7 +25,7 @@ public class Developerconsoletest extends Basetest {
 		Loginpage lp = new Loginpage(driver);
 		hp = lp.loginToApp(driver);
 	}
-	
+
 		@Test
 		public void verifydeveloper() throws FileNotFoundException, IOException, InterruptedException {
 		WebDriver driver=getBrowser();
@@ -34,7 +33,7 @@ public class Developerconsoletest extends Basetest {
 			test.get().info("Usermenu clicked");
 			Assert.assertTrue(hp.verifyusermenu(),"user menu option should be available");
 			Developerconsolepage console= hp.selectDeveloperconsole(driver);
-			
+
 			Assert.assertTrue(console.verifydeveloper(driver), "Developer Console window is displayed");
 logger.info("Developerpage verified");}
 }

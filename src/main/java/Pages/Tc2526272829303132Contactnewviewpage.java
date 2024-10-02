@@ -6,13 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-import Utils.Waitutils;
-
 public class Tc2526272829303132Contactnewviewpage extends Basepage{
 
 	public Tc2526272829303132Contactnewviewpage(WebDriver driver) {
 		super(driver);
-		
+
 	}
 	@FindBy(xpath="//a[@title='Contacts Tab']")
 	public WebElement Contact;
@@ -28,7 +26,7 @@ public class Tc2526272829303132Contactnewviewpage extends Basepage{
 
 	@FindBy(name = "save")
 	public WebElement save;
-	
+
 	public Tc2526272829303132Contactnewviewpage clickcontact(WebDriver driver) {
 		this.Contact.click();
 		return new Tc2526272829303132Contactnewviewpage(driver);
@@ -38,7 +36,7 @@ public class Tc2526272829303132Contactnewviewpage extends Basepage{
 		this.Createnewview.click();
 		if(this.ViewNames.isDisplayed()) {
 			this.ViewNames.sendKeys("Rohini1");
-		
+
 		}
 		if (this.ViewUniqueName.isDisplayed()) {
 			this.ViewUniqueName.clear();
@@ -47,11 +45,11 @@ public class Tc2526272829303132Contactnewviewpage extends Basepage{
 			isAboutTabVerified = false;
 		}
 		this.save.click();
-		
+
 		return isAboutTabVerified;
 	}
-	
-	
+
+
 	@FindBy(xpath="//input[contains(@title,'New')]")
 	public WebElement newbutton;
 	@FindBy(xpath="//input[@id='name_firstcon2']")
@@ -63,32 +61,32 @@ public class Tc2526272829303132Contactnewviewpage extends Basepage{
 	public boolean verifycreatenewcontact(WebDriver driver) throws InterruptedException {
 		boolean isverify=true;
 	if(this.newbutton.isDisplayed()) {
-	
-	
-	
+
+
+
 	newbutton.click();
-		
+
 	firstname.sendKeys("Rohini");
-	
+
 	lastname.sendKeys("R");
-	
+
 	accountname.sendKeys("Ramya");
 	Thread.sleep(3000);
 	WebElement save = driver.findElement(By.name("save"));
 	save.click();
-	
-	
-	
-	
+
+
+
+
 }
 	return isverify;}
-	
+
 
 public boolean verifyrecentcreatecontact(WebDriver driver) throws InterruptedException {
 	boolean isverify1=true;
 
-	
-	
+
+
 	 Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='hotlist_mode']")));
 	 dropdown.selectByVisibleText("Recently Created");
 
@@ -100,7 +98,7 @@ return isverify1;
 @FindBy(xpath="//input[@title='Go!']")
 public WebElement Gobutton;
 public boolean verifymycontact(WebDriver driver) {
-	
+
 boolean isverify2=true;
 
 //Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='fcf']")));

@@ -6,11 +6,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class Tc11createnewview extends Basepage{
 
-	
-	
+
+
 		public Tc11createnewview (WebDriver driver) {
 			super(driver);
-			
+
 		}
 		@FindBy(id="Account_Tab")
 		public WebElement Account1;
@@ -25,7 +25,7 @@ public class Tc11createnewview extends Basepage{
 		public WebElement ViewUniqueName;
 		@FindBy(xpath="//*[@id=\"editPage\"]/div[3]/table/tbody/tr/td[2]/input[1]")
 		public WebElement Save;
-		
+
 		public Tc11createnewview clickaccount(WebDriver driver) {
 			this.Account1.click();
 			return new Tc11createnewview(driver);
@@ -37,18 +37,18 @@ public class Tc11createnewview extends Basepage{
 			this.CreateNewview.click();
 			this.ViewName.clear();
 			this.ViewName.sendKeys("ohrowehgf1");
-			
+
 				this.Save.click();
-			
+
 			}
-			
+
 		 else {
 				isaccount = false;
 			}
-			
-			
+
+
 			return isaccount;
 		}
-		
+
 	}
 

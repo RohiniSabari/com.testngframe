@@ -10,7 +10,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import Constants.FileConstants;
-
 import Utils.Waitutils;
 
 public class Mysettingspage extends Basepage{
@@ -74,8 +73,8 @@ public class Mysettingspage extends Basepage{
 
 			@FindBy(name="save")
 			public WebElement Savebutton;
-			
-			
+
+
 			@FindBy(xpath = "//*[@id=\"bottomButtonRow\"]/input[1]")
 			public WebElement Saveonemail;
 
@@ -115,71 +114,71 @@ public class Mysettingspage extends Basepage{
 
 			@FindBy(id = "progressIcon")
 			public WebElement fileUploadSpinner;
-			
+
 			public boolean verifysettings(WebDriver driver) {
 				boolean issettingsVerified = true;
 			//	this.mySettings.click();
 				if(this.personallink.isDisplayed()) {
 					this.personallink.click();
-				
-				
+
+
 				if (this.loginHistorylink.isDisplayed()) {
 					this.loginHistorylink.click();
 					this.logindisplay.click();
-					
-					
-						
-					
+
+
+
+
 							this.logindisplay.sendKeys(FileConstants.TEST_FILEDOWNLOAD_PATH );
-							
-						
-				
+
+
+
 				}
-				else 
+				else
 				{
 					issettingsVerified = false;
 				}
 				}
-				
+
 				return issettingsVerified;
 			}
-			
+
 			public boolean verifyDisplayandLayout(WebDriver driver) {
 				boolean isdisplayandlayout =true;
 			//	this.mySettings.click();
 				if(this.DisplayLayoutlink.isDisplayed()) {
 					this.DisplayLayoutlink.click();
-				
+
 				}
-				
+
 					this.CustomizedTab.click();
 					if(this.customApp.isDisplayed()) {
 					this.customApp.click();
-					
-					
+
+
 					Select s=new Select(driver.findElement(By.id("p4")));
 					s.selectByVisibleText("Salesforce Chatter");
 					final String str="Reports";
 					Select s1=new Select(driver.findElement(By.id("duel_select_0")));
 					s1.selectByVisibleText("Reports");
-					
-					
+
+
 					Waitutils.explicitlyWaitForClickableElement(driver, this.Add);
 					this.Add.click();
 					this.save.click();
 					}
-					
-				
-				
+
+
+
 				return isdisplayandlayout;
 			}
-			
+
 			//email
-			
-			
+
+
 			public boolean verifyemailsettings(WebDriver driver) {
 				boolean issettingsVerified1 = true;
-			
+
 				if(this.Emaillink.isDisplayed()) {
 					this.Emaillink.click();
 					this.MyEmailSettings.click();
@@ -190,39 +189,39 @@ public class Mysettingspage extends Basepage{
 					this.Emailaddress.clear();
 					this.Emailaddress.sendKeys("rohinirajandran@gmail.com");
 				this.BCCradiobutton.click();
-			
+
 				this.Savebutton.click();
-					
+
 				}
 				else
 				{
 				boolean issettingsVerified11=false;
 				}
 				}
-				return issettingsVerified1;	
-							}	
-			
-			
+				return issettingsVerified1;
+							}
+
+
 			public boolean verifycalendarandreminder(WebDriver driver) throws InterruptedException {
 				boolean iscalendar = true;
-			
+
 				if(this.CalendarAndReminders.isDisplayed()) {
 					this.CalendarAndReminders.click();
 					this.ActivityRemainder.click();
 					this.OpenaTestRemainder.click();
 					}
-				
+
 				if(this.OpenaTestRemainder.isDisplayed()) {
-					
+
 					String parentWindow = driver.getWindowHandle();
-					for(String handle : driver.getWindowHandles()) { 
+					for(String handle : driver.getWindowHandles()) {
 						if(handle != parentWindow) {
 							driver.switchTo().window(handle);
-							
+
 							Thread.sleep(3000);
-							
-							
-							
+
+
+
 				}
 						else
 						{
@@ -230,25 +229,25 @@ public class Mysettingspage extends Basepage{
 						}
 				}}
 				return iscalendar;
-						
+
 			}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-				}	
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				}
+
+
+
+
 

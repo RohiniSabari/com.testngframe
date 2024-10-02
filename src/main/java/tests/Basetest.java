@@ -2,7 +2,6 @@ package tests;
 
 import java.lang.reflect.Method;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.WebDriver;
@@ -28,30 +27,30 @@ import Utils.ReportManager;
 
 
 public class Basetest {
-WebDriver driver=null;
+WebDriver driver;
 	Loginpage lp=null;
 	Homepage hp=null;
-	
-	
-	
-	
+
+
+
+
 	public static ExtentReports extent;
-	
-	public static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<WebDriver>();
-	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
+
+	public static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
+	public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 	public static Logger logger = (Logger) LogManager.getLogger("Basetest");
 	public void setDriver(String browserName, boolean headless) {
 		WebDriver driver = getDriver(browserName, false);
 		threadLocalDriver.set(driver);
 	}
 
-	
-	
+
+
 
 	public static WebDriver getBrowser() {
 		return threadLocalDriver.get();
 	}
-	
+
 	public WebDriver getDriver(String browserName, boolean headless) {
 		WebDriver driver = null;
 		String browser = browserName.toLowerCase();
@@ -81,18 +80,18 @@ WebDriver driver=null;
 		return driver;
 	}
 
-	
+
 	@BeforeSuite
 	public void setup() {
-		
+
 		extent= ReportManager.getInstance();
 	}
-	
+
 	@AfterSuite
 	public void tearDownFinal() {
 		extent.flush();
 	}
-	
+
 	@Parameters("bName")
 	@BeforeMethod( alwaysRun = true)
 	public void setup(@Optional("chrome") String browserName, Method name) {
@@ -102,15 +101,15 @@ WebDriver driver=null;
 		 lp=new Loginpage(driver);
 	 hp=new Homepage(driver);
 	}
-		
-		
-		
-		
+
+
+
+
 	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		
-		
-		
-	
+
+
+
+
 
 
 	@AfterMethod(alwaysRun = true)
@@ -121,7 +120,7 @@ WebDriver driver=null;
 	        try {
 	            driver.close();
 	        } catch (Exception e) {
-	           
+
 	            System.err.println("Exception occurred while closing the browser: " + e.getMessage());
 	        }
 	}
@@ -132,4 +131,3 @@ WebDriver driver=null;
 
 
 
-	

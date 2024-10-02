@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Basepage {
 	public static Logger logger = (Logger) LogManager.getLogger("Basetest");
-	
+
 public Basepage(WebDriver driver) {
 	PageFactory.initElements(driver,this);
 }

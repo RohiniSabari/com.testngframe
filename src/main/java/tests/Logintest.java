@@ -1,9 +1,8 @@
 package tests;
 
 import java.io.FileNotFoundException;
-		import java.io.IOException;
+import java.io.IOException;
 import java.time.Duration;
-
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -25,7 +24,7 @@ public class Logintest extends Basetest{
 			@Test()
 				public void loginErrorMessageTC01() throws InterruptedException, FileNotFoundException, IOException {
 					WebDriver driver = getBrowser();
-					
+
 					logger.info("Browser instance launched");
 					Loginpage lp = new Loginpage(driver);
 					driver.navigate().to(Fileutils.readLoginPropertiesFile("prod.url"));
@@ -62,23 +61,23 @@ public class Logintest extends Basetest{
 					sa.assertEquals(driver.getTitle(), Fileutils.readLoginPropertiesFile("homepage.title1"));
 					System.out.println("Reached last line");
 					sa.assertAll();
-					
+
 				}
-				
+
 				@Test()
 				public void loginToSalesforceTC03() throws InterruptedException, FileNotFoundException, IOException {
 					WebDriver driver = getBrowser();
 					Loginpage lp = new Loginpage(driver);
 					driver.navigate().to(Fileutils.readLoginPropertiesFile("prod.url"));
 					String expectedUsername = Fileutils.readLoginPropertiesFile("valid.username");
-					
-					
+
+
 					Homepage hPage = lp.loginToApp(driver, expectedUsername, Fileutils.readLoginPropertiesFile("valid.password"));
 					Assert.assertEquals(driver.getTitle(), Fileutils.readLoginPropertiesFile("homepage.title"));
 					Assert.assertTrue(hPage.isHomePage(), "User should be in home page");
 					driver.close();
 				}
-				
+
 			//	@Test(dataProvider = "ValidAccounts", dataProviderClass = CommonUtils.class)
 				public void loginToSalesforceAccountsTc04(String username, String pass)
 						throws InterruptedException, FileNotFoundException, IOException {
@@ -89,23 +88,23 @@ public class Logintest extends Basetest{
 //					Assert.assertEquals(driver.getTitle(), FileUtils.readLoginPropertiesFile("homepage.title"));
 //					Assert.assertTrue(hPage.isHomePage(), "User should be in home page");
 				}
-				
+
 			//	@DataProvider(name = "InvalidAccounts")
 				public Object loginTestDataInValid() {
 //					To read those user accounts logic
 					return new Object[][] { {"mithun@tek.com", "12345" }, { "deek@tek.com", "12345" },
 							{ "dean@tek.com", "12345" } };
 				}
-				
-				
-				
-				
-				
-				
+
+
+
+
+
+
 			}
 
 
 
 
 
-	
+

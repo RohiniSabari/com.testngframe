@@ -12,14 +12,13 @@ import org.testng.annotations.Test;
 
 import Pages.Homepage;
 import Pages.Loginpage;
-
 import Pages.Tc12Editviewpage;
 import listenersdemo1.ListenersSSF;
 @Listeners(ListenersSSF.class)
 
 public class Tc12Editviewtest extends Basetest{
-	
-	
+
+
 		Homepage hp;
 			WebDriver driver;
 			@BeforeMethod
@@ -37,12 +36,12 @@ public class Tc12Editviewtest extends Basetest{
 		       test.get().info("account clicked");
 				Assert.assertTrue(c.verifyaccountname3(driver),"Accounts page is displayed with correct <username>and <View name> edit page Is displayed");
 				Thread.sleep(3000);
-				
+
 				 logger.info("Account name verified");
-				
-				
+
+
 			}
-				
+
 		}
 
 

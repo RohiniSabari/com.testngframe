@@ -4,10 +4,10 @@ import Utils.Commonutils;
 
 
 public class FileConstants{
-	
-	
-	
-	
+
+
+
+
 
 	public static final String LOGIN_TEST_DATA_FILE_PATH ="src/main/java/TestData/login.properties";
 	public static final String HOMEPAGE_TEST_DATA_FILE_PATH ="src/main/java/TestData/homepage.properties";

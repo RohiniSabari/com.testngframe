@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import Constants.FileConstants;
-import Utils.Actionutils;
 import Utils.Waitutils;
+import utils.ActionUtils;
 
 
 public class Myprofilepage extends Basepage{
@@ -31,10 +31,10 @@ public class Myprofilepage extends Basepage{
 
 	@FindBy(xpath = "//*[@id='tailBreadcrumbNode']")
 	public WebElement userProfilePageNameDisplay;
-	
-	
-	
-	
+
+
+
+
 	//post link
 	@FindBy(css = "#publishereditablearea")
 	public WebElement postLink;
@@ -47,8 +47,8 @@ public class Myprofilepage extends Basepage{
 
 	@FindBy(css ="[class=\"view highlight\"]")
 	public WebElement newPostHighlight;
-	
-	
+
+
 	// filelink
 
 		@FindBy(xpath = "//*[@id='publisherAttachContentPost']")
@@ -76,11 +76,11 @@ public class Myprofilepage extends Basepage{
 
 		@FindBy(id = "contactTab")
 		public WebElement contactTab;
-		
-		
-		
-		
-		
+
+
+
+
+
 		// My Settings
 					// personallink
 		@FindBy(xpath="//a[contains(text(),'My Settings')]")
@@ -94,7 +94,7 @@ public class Myprofilepage extends Basepage{
 					@FindBy(xpath = "//*[@id=\"RelatedUserLoginHistoryList_body\"]/div/a")
 					public WebElement logindisplay;
 
-				
+
 					// Display&layoutlink
 
 					@FindBy(xpath = "//*[@id=\"DisplayAndLayout_font\"]")
@@ -151,7 +151,7 @@ public class Myprofilepage extends Basepage{
 					@FindBy(xpath = "//*[@id=\"summary\"]")
 					public WebElement SampleEventPopup;
 
-					
+
 
 					@FindBy(id = "profileTab_sfdc.ProfilePlatformFeed")
 					public WebElement profilePage;
@@ -163,30 +163,30 @@ public class Myprofilepage extends Basepage{
 					@FindBy(xpath = "(//*[@class='contentFileTitle'])[1]")
 					public WebElement verifyFilePostElement;
 
-				
+
 
 					@FindBy(id = "progressIcon")
 					public WebElement fileUploadSpinner;
-					
-		
-		
-	
-	
+
+
+
+
+
 	public void clickEditProfile(WebDriver driver) {
 		//Waitutils.explicitlyWaitForClickableElement(driver, this.editContactButton);
 		this.editContactButton.click();
 	}
 	public boolean verifyContactIframeAvailability(WebDriver driver) {
 		boolean isIframeLoaded = false;
-	
+
 		driver.switchTo().frame(iframeAboutTab);
 			if (aboutTab.isDisplayed() && contactTab.isDisplayed()) {
-			
+
 				isIframeLoaded = true;
 			} else {
 				System.out.println("Iframe Not loaded");
 			}
-		
+
 		return isIframeLoaded;
 	}
 	public boolean verifyAboutTab(WebDriver driver) {
@@ -204,9 +204,9 @@ public class Myprofilepage extends Basepage{
 		driver.switchTo().defaultContent();
 		return isAboutTabVerified;
 	}
-	
-	
-	
+
+
+
 	public boolean verifyLastNameChange() {
 		String lastName = "Raj";
 		boolean isLastNameChanged = true;
@@ -215,7 +215,7 @@ public class Myprofilepage extends Basepage{
 		}
 		return isLastNameChanged;
 	}
-	
+
 	//postlink
 	public boolean verifypost(WebDriver driver, String message) {
 		boolean isPostCreated = false;
@@ -248,7 +248,7 @@ public class Myprofilepage extends Basepage{
 		}
 		return isFileUploaded;
 	}
-	
+
 	// Photo link
 
 		@FindBy(xpath = "//*[@id=\"publisherAttachLinkPost\"]/span[1]")
@@ -271,7 +271,7 @@ public class Myprofilepage extends Basepage{
 
 		@FindBy(xpath = "//input[@id='j_id0:j_id7:save']")
 		public WebElement photoSaveButton2;
-	
+
 		@FindBy(name = "j_id0:waitingForm")
 		public WebElement spinnerIcon;
 		@FindBy(id = "cropWaitingPage:croppingForm")
@@ -279,14 +279,14 @@ public class Myprofilepage extends Basepage{
 		@FindBy(css = "#displayBadge")
 		public WebElement moderatorButton;
 		public void clickOnAddPhoto(WebDriver driver) {
-			Actionutils.mouseHover(driver, this.moderatorButton);
+			ActionUtils.mouseHover(driver, this.moderatorButton);
 			this.updateButton.click();
 		}
-		
+
 	public boolean verifyAddPhoto(WebDriver driver) {
 		boolean isPhotoUploaded = false;
 		driver.switchTo().frame(photoUploadIframe);
-		
+
 		if(Waitutils.explicitlyWaitForClickableElement(driver, this.uploadphoto)) {
 	//this.photolink.click();
 			this.uploadphoto.sendKeys(FileConstants.TEST_PHOTO_UPLOAD_PATH);
@@ -300,13 +300,13 @@ public class Myprofilepage extends Basepage{
 		}
 		driver.switchTo().defaultContent();
 		return isPhotoUploaded;
-		
+
 }
-	
-	
-	
-	
-	
+
+
+
+
+
 
 }
 

@@ -27,7 +27,7 @@ public class Tc07Mysettingstest extends Basetest{
 		Loginpage lp = new Loginpage(driver);
 		hp = lp.loginToApp(driver);
 	}
-	
+
 		@Test
 		public void verifymysettings() throws FileNotFoundException, IOException, InterruptedException {
 			WebDriver driver = getBrowser();
@@ -40,9 +40,9 @@ public class Tc07Mysettingstest extends Basetest{
 			Commonutils.captureScreenshot(driver);
 			 logger.info("My settings verified");
 		}
-		
-		
-		
+
+
+
 		@Test
 		public void verifyDisplayandlayout() throws FileNotFoundException, IOException
 		{
@@ -54,8 +54,8 @@ public class Tc07Mysettingstest extends Basetest{
 			Commonutils.captureScreenshot(driver);
 		Assert.assertTrue(setting.verifyDisplayandLayout(driver),"Reports field is added to Selected Tabs list and also added in the links available in top of salesforce page and sales force chatter page and sales and marketing pages.");
 		 logger.info("DisplayandLayout verified");}
-		
-		
+
+
 	@Test
 		public void verifyemaillink() throws FileNotFoundException, IOException {
 			WebDriver driver = getBrowser();
@@ -65,10 +65,10 @@ public class Tc07Mysettingstest extends Basetest{
 			Assert.assertTrue(setting.verifyemailsettings(driver),"Given details are saved as default mail options and My settings page is displayed");
 			test.get().info("emaillink verified");
 			 logger.info("emailsettings verified");
-			
+
 		}
-		
-		
+
+
 		@Test
 		public void verifycalendark() throws FileNotFoundException, IOException, InterruptedException {
 			WebDriver driver = getBrowser();
@@ -78,11 +78,11 @@ public class Tc07Mysettingstest extends Basetest{
 			test.get().info("calendar clicked");
 			Assert.assertTrue(setting.verifycalendarandreminder(driver), "popup window displayed");
 			 logger.info("popupwindow verified");
-		}		
-		
-		
-		
-		
-		
-			
+		}
+
+
+
+
+
+
 }

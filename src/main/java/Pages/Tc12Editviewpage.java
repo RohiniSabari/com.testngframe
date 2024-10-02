@@ -11,13 +11,13 @@ import org.openqa.selenium.support.ui.Select;
 import Utils.Waitutils;
 
 public class Tc12Editviewpage extends Basepage{
-	
 
-		
-		
+
+
+
 		public  Tc12Editviewpage(WebDriver driver) {
 			super(driver);
-			
+
 		}
 		@FindBy(id="Account_Tab")
 		public WebElement Account2;
@@ -33,15 +33,15 @@ public class Tc12Editviewpage extends Basepage{
 			this.Account2.click();
 			return new Tc12Editviewpage (driver);
 		}
-		
+
 		public boolean verifyaccountname3(WebDriver driver) {
 			boolean isaccount = true;
 			this.Account2.click();
 			if(this.View.isDisplayed()) {
 			this.View.click();
-		
-		
-		
+
+
+
 				  Select dropdown = new Select(driver.findElement(By.id("fcf")));
 				    dropdown.selectByIndex(2);
 				    Waitutils.explicitlyWaitForClickableElement(driver, this.Editlink);
@@ -55,7 +55,7 @@ public class Tc12Editviewpage extends Basepage{
 		WebElement Operator = driver.findElement(By.xpath("//select[@id='fcol1']"));
 		Select operator = new Select(driver.findElement(By.xpath("//select[@id='fop1']")));
 		operator.selectByIndex(3);
-			
+
 		WebElement value = driver.findElement(By.id("fval1"));
 		value.clear();
 		value.sendKeys("<a>");
@@ -63,17 +63,17 @@ public class Tc12Editviewpage extends Basepage{
 			Select Availablelist = new Select(dropdown1);
 			List<WebElement> options = Availablelist.getOptions();
 
-			boolean Element_available = false; 
-			
-			for(int i=0; i<options.size(); i++) {
-				if(options.get(i).getText().equals("Last Activity")) {
+			boolean Element_available = false;
+
+			for (WebElement option : options) {
+				if(option.getText().equals("Last Activity")) {
 					Element_available = true;
 					WebElement Add= driver.findElement(By.xpath("//img[@class='rightArrowIcon']"));
 					Add.click();
 					break;
 				}
 			}
-	
+
 			if(Element_available = false) {
 				WebElement dropdown11 = driver.findElement(By.xpath("//select[@id='colselector_select_1']"));
 				Select Selectedlist = new Select(dropdown11);
@@ -83,7 +83,7 @@ public class Tc12Editviewpage extends Basepage{
 					if(Selectedoptions.get(i).getText().equals("Last Activity")) {
 						break;
 					}
-				}	
+				}
 			}
 
 	driver.findElement(By.name("save")).click();
