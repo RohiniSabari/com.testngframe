@@ -33,7 +33,6 @@ WebDriver driver;
 
 
 
-
 	public static ExtentReports extent;
 
 	public static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();

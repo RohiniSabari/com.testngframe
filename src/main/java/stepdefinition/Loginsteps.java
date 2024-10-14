@@ -7,8 +7,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+
 
 import Pages.Homepage;
 import Pages.Loginpage;
@@ -17,20 +16,20 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.LoginPage;
+
 import tests.Basetest;
 
 public class Loginsteps extends Basetest{
-	WebDriver driver;
+	WebDriver driver=null;
 	Loginpage lp;
 
 	@Before()
 	public void setup() {
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
 		lp = new Loginpage(driver);
 	}
 	
-	@After()
+@After()
 	public void tearDown() {
 		driver.close();
 	}
@@ -44,7 +43,7 @@ public class Loginsteps extends Basetest{
 
 	@Given("I landed on login page")
 	public void i_landed_on_login_page() {
-		WebDriver driver = getDriver("chrome", false);
+	 driver = getDriver("chrome", false);
 		lp = new Loginpage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://login.salesforce.com");
@@ -70,6 +69,7 @@ public class Loginsteps extends Basetest{
 		Homepage hp = new Homepage(driver);
 		
 		Assert.assertTrue(hp.isHomePage());
+	
 		
 		
 	}
